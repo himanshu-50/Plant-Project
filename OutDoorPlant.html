@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outdoor Plants</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/7d5b9c692b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="plants.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">🌿 Plant Oasis</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto fw-semibold align-items-center">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="IndoorPlants.html">Indoor</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="OutDoorPlant.html">Outdoor</a></li>
+                    <li class="nav-item"><a class="nav-link" href="FloweringPlants.html">Flowering</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Tree.html">Trees</a></li>
+                    <li class="nav-item ms-lg-3 mt-2 mt-lg-0">
+                        <a href="Wishlist.html" class="nav-link position-relative d-inline-block p-0" title="Wishlist" style="line-height: 1;">  
+                            <div class="wishlist-nav-icon">
+                                <i class="fa-solid fa-heart"></i>
+                            </div>
+                            <span id="wishlist-badge" class="position-absolute badge rounded-pill bg-danger fw-bold d-none" 
+                                style="font-size: 0.65rem; padding: 0.25em 0.45em; top: -5px; right: -5px; z-index: 5; border: 1px solid white; box-shadow: 0 2px 5px rgba(0,0,0,0.2);">
+                                0
+                            </span>
+                        </a>
+                    </li>
+                    <!-- 🛒 SHOPPING CART ICON (Yeh navbar ke andar jod diya) -->
+                    <li class="nav-item ms-lg-3 mt-2 mt-lg-0">
+                        <a href="Cart.html" class="text-white position-relative fs-5" id="cart-icon">
+                            <i class="fas fa-shopping-cart"></i>
+                            <!-- 🔴 Cart Counter Badge -->
+                            <span id="cart-count" class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger" style="font-size: 0.6rem;">
+                                0
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- 🏡 OUTDOOR PLANTS SECTION START HERE -->
+<div class="container py-5">
+    <div class="text-center mb-5">
+        <h2 class="fw-bold text-success">Outdoor Plants Collection</h2>
+        <p class="text-muted">Bring your garden to life with hardy, sun-loving permanent green plants!</p>
+    </div>
+
+    <!-- Plants Card Grid -->
+    <div class="row g-4">
+
+        <!-- 1. Areca Palm (Outdoor) -->
+        <div class="col-md-4 col-sm-6 mb-4">
+            <div class="card h-100 shadow-sm custom-plant-card">
+                <img src="https://i.pinimg.com/originals/a6/5f/83/a65f833e446578143af1091dd7b3a2df.jpg" 
+                class="card-img-top plant-img" alt="Areca Palm">
+                <div class="card-body text-center">
+                    <h5 class="card-title fw-bold">Areca Palm</h5>
+                    <p class="card-text plant-text">Areca Palm is a stunning outdoor plant with golden-green fronds that create a lush tropical paradise.</p>
+                    <span class="fw-bold d-block mb-3 plant-price"><i class="fa-solid fa-indian-rupee-sign"></i> 399</span>
+                    <div class="d-flex gap-2 justify-content-center align-items-center">
+                        <button class="btn btn-success rounded-pill add-to-cart-btn flex-grow-1">Add to Cart</button>
+                        <button class="btn btn-outline-danger wishlist-btn" data-name="Areca Palm" data-price="399" data-img="https://i.pinimg.com/originals/a6/5f/83/a65f833e446578143af1091dd7b3a2df.jpg">
+                            <i class="fa-regular fa-heart"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 2. Golden Pothos (Money Plant Big) -->
+        <div class="col-md-4 col-sm-6 mb-4">
+            <div class="card h-100 shadow-sm custom-plant-card">
+                <img src="https://static.vecteezy.com/system/resources/previews/011/089/553/non_2x/green-leaves-pattern-of-epipremnum-aureum-foliage-in-the-garden-leaf-exotic-tropical-devil-s-ivy-golden-pothos-photo.jpg" 
+                class="card-img-top plant-img" alt="Golden Pothos">
+                <div class="card-body text-center">
+                    <h5 class="card-title fw-bold">Golden Pothos</h5>
+                    <p class="card-text plant-text">Fast-growing climber with big green leaves, perfect for outdoor walls.</p>
+                    <span class="fw-bold d-block mb-3 plant-price"><i class="fa-solid fa-indian-rupee-sign"></i> 149</span>
+                    <div class="d-flex gap-2 justify-content-center align-items-center">
+                        <button class="btn btn-success rounded-pill add-to-cart-btn flex-grow-1">Add to Cart</button>
+                        <button class="btn btn-outline-danger wishlist-btn" data-name="Golden Pothos" data-price="149" data-img="https://static.vecteezy.com/system/resources/previews/011/089/553/non_2x/green-leaves-pattern-of-epipremnum-aureum-foliage-in-the-garden-leaf-exotic-tropical-devil-s-ivy-golden-pothos-photo.jpg   ">
+                            <i class="fa-regular fa-heart"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 3. Caladium -->
+        <div class="col-md-4 col-sm-6 mb-4">
+            <div class="card h-100 shadow-sm custom-plant-card">
+                <img src="https://th.bing.com/th/id/OIP.iGqOs9rGxCboth8nih_vpAHaLH?o=7rm=3&rs=1&pid=ImgDetMain&o=7&rm=3" 
+                class="card-img-top plant-img" alt="Caladium">
+                <div class="card-body text-center">
+                    <h5 class="card-title fw-bold">Caladium</h5>
+                    <p class="card-text plant-text">Caladium plants show off spectacular, heart-shaped leaves in glowing shades of pink, white, and green</p>
+                    <span class="fw-bold d-block mb-3 plant-price"><i class="fa-solid fa-indian-rupee-sign"></i> 299</span>
+                   <div class="d-flex gap-2 justify-content-center align-items-center">
+                        <button class="btn btn-success rounded-pill add-to-cart-btn flex-grow-1">Add to Cart</button>
+                        <button class="btn btn-outline-danger wishlist-btn" data-name="Caladium" data-price="299" data-img="https://th.bing.com/th/id/OIP.iGqOs9rGxCboth8nih_vpAHaLH?o=7rm=3&rs=1&pid=ImgDetMain&o=7&rm=3">
+                            <i class="fa-regular fa-heart"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 4. Spider Lily -->
+        <div class="col-md-4 col-sm-6 mb-4">
+            <div class="card h-100 shadow-sm custom-plant-card">
+                <img src="https://i.pinimg.com/originals/3f/0e/eb/3f0eebc09ab8314918eae2e60be2c19a.jpg" 
+                class="card-img-top plant-img" alt="Spider Lily">
+                <div class="card-body text-center">
+                    <h5 class="card-title fw-bold">Spider Lily</h5>
+                    <p class="card-text plant-text">Hardy outdoor green plant that produces beautiful white seasonal flowers.</p>
+                    <span class="fw-bold d-block mb-3 plant-price"><i class="fa-solid fa-indian-rupee-sign"></i> 199</span>
+                    <div class="d-flex gap-2 justify-content-center align-items-center">
+                        <button class="btn btn-success rounded-pill add-to-cart-btn flex-grow-1">Add to Cart</button>
+                        <button class="btn btn-outline-danger wishlist-btn" data-name="Spider Lily" data-price="199" data-img="https://i.pinimg.com/originals/3f/0e/eb/3f0eebc09ab8314918eae2e60be2c19a.jpg">
+                            <i class="fa-regular fa-heart"></i>
+                        </button>
+                    </div>
+                </div> 
+            </div>
+        </div>
+
+        <!-- 5. Asparagus Foxtail Fern -->
+        <div class="col-md-4 col-sm-6 mb-4">
+            <div class="card h-100 shadow-sm custom-plant-card">
+                <img src="https://i.etsystatic.com/35474320/r/il/4ed68b/5359550458/il_800x800.5359550458_kc8c.jpg" 
+                class="card-img-top plant-img" alt="Foxtail Fern">
+                <div class="card-body text-center">
+                    <h5 class="card-title fw-bold">Foxtail Fern</h5>
+                    <p class="card-text plant-text">Fluffy, brush-like green plumes that create a dense, neat garden look.</p>
+                    <span class="fw-bold d-block mb-3 plant-price"><i class="fa-solid fa-indian-rupee-sign"></i> 249</span>
+                    <div class="d-flex gap-2 justify-content-center align-items-center">
+                        <button class="btn btn-success rounded-pill add-to-cart-btn flex-grow-1">Add to Cart</button>
+                        <button class="btn btn-outline-danger wishlist-btn" data-name="Foxtail Fern" data-price="249" data-img="https://i.etsystatic.com/35474320/r/il/4ed68b/5359550458/il_800x800.5359550458_kc8c.jpg">
+                            <i class="fa-regular fa-heart"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 6. Ficus Benjamina -->
+        <div class="col-md-4 col-sm-6 mb-4">
+            <div class="card h-100 shadow-sm custom-plant-card">
+                <img src="https://i.pinimg.com/originals/f4/da/8c/f4da8c50ae9c29b4bf48acfc8c432a42.jpg" 
+                class="card-img-top plant-img" alt="Weeping Ficus">
+                <div class="card-body text-center">
+                    <h5 class="card-title fw-bold">Weeping Ficus</h5>
+                    <p class="card-text plant-text">Elegant woody plant with dense, glossy leaves, ideal for garden borders.</p>
+                    <span class="fw-bold d-block mb-3 plant-price"><i class="fa-solid fa-indian-rupee-sign"></i> 349</span>
+                    <div class="d-flex gap-2 justify-content-center align-items-center">
+                        <button class="btn btn-success rounded-pill add-to-cart-btn flex-grow-1">Add to Cart</button>
+                        <button class="btn btn-outline-danger wishlist-btn" data-name="Weeping Ficus" data-price="349" data-img="https://i.pinimg.com/originals/f4/da/8c/f4da8c50ae9c29b4bf48acfc8c432a42.jpg">
+                            <i class="fa-regular fa-heart"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 7. Jade Bush -->
+        <div class="col-md-4 col-sm-6 mb-4">
+            <div class="card h-100 shadow-sm custom-plant-card">
+                <img src="https://tse4.mm.bing.net/th/id/OIP.yYMsIaDajXjf14OurEYA-gHaHa?w=800&h=800&rs=1&pid=ImgDetMain&o=7&rm=3" 
+                class="card-img-top plant-img" alt="Jade Bush">
+                <div class="card-body text-center">
+                    <h5 class="card-title fw-bold">Jade Bush</h5>
+                    <p class="card-text plant-text">A thick, woody succulent shrub that grows beautifully in sunny spots.</p>
+                    <span class="fw-bold d-block mb-3 plant-price"><i class="fa-solid fa-indian-rupee-sign"></i> 279</span>
+                    <div class="d-flex gap-2 justify-content-center align-items-center">
+    <button class="btn btn-success rounded-pill add-to-cart-btn flex-grow-1">Add to Cart</button>
+    <button class="btn btn-outline-danger wishlist-btn" data-name="Jade Bush" data-price="279" data-img="https://tse4.mm.bing.net/th/id/OIP.yYMsIaDajXjf14OurEYA-gHaHa?w=800&h=800&rs=1&pid=ImgDetMain&o=7&rm=3">
+        <i class="fa-regular fa-heart"></i>
+    </button>
+</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 8. Cycas Palm (Sago Palm) -->
+        <div class="col-md-4 col-sm-6 mb-4">
+            <div class="card h-100 shadow-sm custom-plant-card">
+                <img src="https://tse4.mm.bing.net/th/id/OIP.YHXsWxB5Q85_nYSzSQaxTwHaHa?w=600&h=600&rs=1&pid=ImgDetMain&o=7&rm=3" 
+                class="card-img-top plant-img" alt="Sago Palm">
+                <div class="card-body text-center">
+                    <h5 class="card-title fw-bold">Sago Palm</h5>
+                    <p class="card-text plant-text">A premium, slow-growing outdoor palm that gives a royal look to gardens.</p>
+                    <span class="fw-bold d-block mb-3 plant-price"><i class="fa-solid fa-indian-rupee-sign"></i> 599</span>
+                    <div class="d-flex gap-2 justify-content-center align-items-center">
+    <button class="btn btn-success rounded-pill add-to-cart-btn flex-grow-1">Add to Cart</button>
+    <button class="btn btn-outline-danger wishlist-btn" data-name="Sago Palm" data-price="559" data-img="https://tse4.mm.bing.net/th/id/OIP.YHXsWxB5Q85_nYSzSQaxTwHaHa?w=600&h=600&rs=1&pid=ImgDetMain&o=7&rm=3">
+        <i class="fa-regular fa-heart"></i>
+    </button>
+</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 9.Croton -->
+        <div class="col-md-4 col-sm-6 mb-4">
+            <div class="card h-100 shadow-sm custom-plant-card">
+                <img src="https://nestreeo.com/wp-content/uploads/2019/11/Croton-Petra-1.jpg" 
+                class="card-img-top plant-img" alt="Croton Plant">
+                <div class="card-body text-center">
+                    <h5 class="card-title fw-bold">Croton Plant</h5>
+                    <p class="card-text plant-text">Croton plants feature bold, leathery foliage painted in fiery mixtures of yellow, orange, and red.</p>
+                    <span class="fw-bold d-block mb-3 plant-price"><i class="fa-solid fa-indian-rupee-sign"></i> 249</span>
+                    <div class="d-flex gap-2 justify-content-center align-items-center">
+                        <button class="btn btn-success rounded-pill add-to-cart-btn flex-grow-1">Add to Cart</button>
+                        <button class="btn btn-outline-danger wishlist-btn" data-name="Croton Plant" data-price="249" data-img="https://nestreeo.com/wp-content/uploads/2019/11/Croton-Petra-1.jpg">
+                            <i class="fa-regular fa-heart"></i>
+                        </button>
+                    </div>
+                </div> 
+            </div>
+        </div>
+
+        <!-- 10. Agave Plant -->
+        <div class="col-md-4 col-sm-6 mb-4">
+            <div class="card h-100 shadow-sm custom-plant-card">
+                <img src="https://eureka-farms.com/cdn/shop/files/image_29803ed0-81b4-48f5-80b1-3d613fbf1e18.jpg?v=1689302727&width=1780" 
+                class="card-img-top plant-img" alt="Agave Plant">
+                <div class="card-body text-center">
+                    <h5 class="card-title fw-bold">Agave Plant</h5>
+                    <p class="card-text plant-text">Stunning architectural rosettes of thick leaves, perfectly sun-tolerant.</p>
+                    <span class="fw-bold d-block mb-3 plant-price"><i class="fa-solid fa-indian-rupee-sign"></i> 449</span>
+                    <div class="d-flex gap-2 justify-content-center align-items-center">
+                        <button class="btn btn-success rounded-pill add-to-cart-btn flex-grow-1">Add to Cart</button>
+                        <button class="btn btn-outline-danger wishlist-btn" data-name="Agave Plant" data-price="449" data-img="https://eureka-farms.com/cdn/shop/files/image_29803ed0-81b4-48f5-80b1-3d613fbf1e18.jpg?v=1689302727&width=1780">
+                            <i class="fa-regular fa-heart"></i>
+                        </button>
+                    </div>
+                </div>    
+            </div>
+        </div>
+        <div class="col-md-4 col-sm-6 mb-4">
+            <div class="card h-100 shadow-sm custom-plant-card">
+                <img src="https://s-media-cache-ak0.pinimg.com/236x/35/08/b2/3508b28d2dc9ab0210251dd8ccb9e38c.jpg" 
+                class="card-img-top plant-img" alt="Box-wood">
+                <div class="card-body text-center">
+                    <h5 class="card-title fw-bold">Box-wood</h5>
+                    <p class="card-text plant-text">Boxwood is a classic, hardy evergreen shrub perfect for creating structured garden borders and topiaries.</p>
+                    <span class="fw-bold d-block mb-3 plant-price"><i class="fa-solid fa-indian-rupee-sign"></i> 179</span>
+                    <div class="d-flex gap-2 justify-content-center align-items-center">
+                        <button class="btn btn-success rounded-pill add-to-cart-btn flex-grow-1">Add to Cart</button>
+                        <button class="btn btn-outline-danger wishlist-btn" data-name="Box-wood" data-price="179" data-img="https://s-media-cache-ak0.pinimg.com/236x/35/08/b2/3508b28d2dc9ab0210251dd8ccb9e38c.jpg">
+                            <i class="fa-regular fa-heart"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 col-sm-6 mb-4">
+            <div class="card h-100 shadow-sm custom-plant-card">
+                <img src="https://i.pinimg.com/736x/c0/80/8c/c0808c63f1057996691adcf20b3d4a29.jpg" 
+                class="card-img-top plant-img" alt="Coleus">
+                <div class="card-body text-center">
+                    <h5 class="card-title fw-bold">Coleus</h5>
+                    <p class="card-text plant-text">Coleus brings sensational color to shady spots with its incredibly vibrant, multi-patterned, velvet-textured foliage.</p>
+                    <span class="fw-bold d-block mb-3 plant-price"><i class="fa-solid fa-indian-rupee-sign"></i> 239</span>
+                    <div class="d-flex gap-2 justify-content-center align-items-center">
+                        <button class="btn btn-success rounded-pill add-to-cart-btn flex-grow-1">Add to Cart</button>
+                        <button class="btn btn-outline-danger wishlist-btn" data-name="Coleus" data-price="239" data-img="https://i.pinimg.com/736x/c0/80/8c/c0808c63f1057996691adcf20b3d4a29.jpg">
+                            <i class="fa-regular fa-heart"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 col-sm-6 mb-4">
+            <div class="card h-100 shadow-sm custom-plant-card">
+                <img src="https://hydrangealove.com/wp-content/uploads/2024/05/How-to-Use-Coffee-Grounds-For-Hydrangea-Plants-2-800x1200.jpg" 
+                class="card-img-top plant-img" alt="Hydrangea">
+                <div class="card-body text-center">
+                    <h5 class="card-title fw-bold">Hydrangea</h5>
+                    <p class="card-text plant-text">Hydrangea is a stunning shrub loved for its massive, cloud-like clusters of beautiful, color-changing flowers.</p>
+                    <span class="fw-bold d-block mb-3 plant-price"><i class="fa-solid fa-indian-rupee-sign"></i> 419</span>
+                    <div class="d-flex gap-2 justify-content-center align-items-center">
+                        <button class="btn btn-success rounded-pill add-to-cart-btn flex-grow-1">Add to Cart</button>
+                        <button class="btn btn-outline-danger wishlist-btn" data-name="Hydrangea" data-price="419" data-img="https://hydrangealove.com/wp-content/uploads/2024/05/How-to-Use-Coffee-Grounds-For-Hydrangea-Plants-2-800x1200.jpg">
+                            <i class="fa-regular fa-heart"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 col-sm-6 mb-4">
+            <div class="card h-100 shadow-sm custom-plant-card">
+                <img src="https://www.latestseed.com/wp-content/uploads/2023/04/prod500040_1.jpg" 
+                class="card-img-top plant-img" alt="Celosia Cristata">
+                <div class="card-body text-center">
+                    <h5 class="card-title fw-bold">Celosia Cristata</h5>
+                    <p class="card-text plant-text">Celosia Cristata features unique, velvety flower heads that mimic the intricate, wavy folds of a cockscomb.</p>
+                    <span class="fw-bold d-block mb-3 plant-price"><i class="fa-solid fa-indian-rupee-sign"></i> 319</span>
+                    <div class="d-flex gap-2 justify-content-center align-items-center">
+                        <button class="btn btn-success rounded-pill add-to-cart-btn flex-grow-1">Add to Cart</button>
+                        <button class="btn btn-outline-danger wishlist-btn" data-name="Celosia Cristata" data-price="319" data-img=https://www.latestseed.com/wp-content/uploads/2023/04/prod500040_1.jpg">
+                            <i class="fa-regular fa-heart"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 col-sm-6 mb-4">
+            <div class="card h-100 shadow-sm custom-plant-card">
+                <img src="https://i.pinimg.com/736x/14/2e/de/142ede0e2d21f7f80eaa2b71777604dc.jpg" 
+                class="card-img-top plant-img" alt="Lantanas">
+                <div class="card-body text-center">
+                    <h5 class="card-title fw-bold">Lantanas</h5>
+                    <p class="card-text plant-text">Lantanas are resilient, sun-loving plants boasting dense clusters of bright, color-shifting, nectar-rich summer blooms.</p>
+                    <span class="fw-bold d-block mb-3 plant-price"><i class="fa-solid fa-indian-rupee-sign"></i> 549</span>
+                    <div class="d-flex gap-2 justify-content-center align-items-center">
+                        <button class="btn btn-success rounded-pill add-to-cart-btn flex-grow-1">Add to Cart</button>
+                        <button class="btn btn-outline-danger wishlist-btn" data-name="Lantanas" data-price="549" data-img="https://i.pinimg.com/736x/14/2e/de/142ede0e2d21f7f80eaa2b71777604dc.jpg">
+                            <i class="fa-regular fa-heart"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<!-- 🏡 OUTDOOR PLANTS SECTION END HERE -->
+
+
+<!-- 🛑 FOOTER -->
+    <footer class="bg-dark text-white text-center py-4 mt-5">
+        <p class="mb-0">&copy; 2026 Plant Oasis. All Rights Reserved. Developed by Own.</p>
+    </footer>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+    let cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+    const cartBadge = document.getElementById('cart-count');
+    if (cartBadge) {
+        cartBadge.innerText = cart.reduce((total, item) => total + item.quantity, 0);
+    }
+
+    const allButtons = document.querySelectorAll('.add-to-cart-btn');
+
+    allButtons.forEach(function(button) {
+        button.addEventListener('click', function(event) {
+            const card = event.target.closest('.custom-plant-card');
+            if (!card) return;
+
+            const title = card.querySelector('.card-title').innerText;
+            const priceText = card.querySelector('.plant-price').innerText;
+            const price = parseInt(priceText.replace(/[^\d]/g, '')); 
+            const img = card.querySelector('.plant-img').src;
+
+            const plant = {
+                title: title,
+                price: price,
+                img: img,
+                quantity: 1
+            };
+
+            const existingProductIndex = cart.findIndex(item => item.title === plant.title);
+            
+            if (existingProductIndex > -1) {
+                cart[existingProductIndex].quantity += 1;
+            } else {
+                cart.push(plant);
+            }
+
+            localStorage.setItem('cart', JSON.stringify(cart));
+
+            if (cartBadge) {
+                cartBadge.innerText = cart.reduce((total, item) => total + item.quantity, 0);
+            }
+
+            alert(title + " added successfully! 🎉");
+        });
+    });
+
+
+   // 1. Wishlist Badge ko update karne wala main function
+    function updateWishlistBadge() {
+        const wishlistBadge = document.getElementById('wishlist-badge');
+        const wishlist = JSON.parse(localStorage.getItem('plantWishlist')) || [];
+        
+        if (wishlistBadge) {
+            wishlistBadge.textContent = wishlist.length;
+            // Agar list khali hai toh badge hide kar do, warna dikhao
+            wishlistBadge.classList.toggle('d-none', wishlist.length === 0);
+        }
+    }
+
+    // 2. Wishlist UI (Heart icon active/inactive) ko set karne wala function
+    function updateWishlistUI() {
+        const wishlist = JSON.parse(localStorage.getItem('plantWishlist')) || [];
+        document.querySelectorAll('.wishlist-btn').forEach(btn => {
+            const plantName = btn.getAttribute('data-name');
+            const isWishlisted = wishlist.some(item => item.name === plantName);
+            
+            if (isWishlisted) {
+                btn.classList.add('active');
+                btn.innerHTML = '<i class="fa-solid fa-heart"></i>';
+            } else {
+                btn.classList.remove('active');
+                btn.innerHTML = '<i class="fa-regular fa-heart"></i>';
+            }
+        });
+    }
+
+    // 3. Page load hote hi sab set karo
+    document.addEventListener('DOMContentLoaded', function () {
+        updateWishlistBadge();
+        updateWishlistUI();
+
+        // 4. Sabhi Wishlist buttons par click event lagao
+        document.querySelectorAll('.wishlist-btn').forEach(btn => {
+            btn.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                // Sabse pehle tazza (latest) data uthao
+                let wishlist = JSON.parse(localStorage.getItem('plantWishlist')) || [];
+                const name = this.getAttribute('data-name');
+                const price = this.getAttribute('data-price');
+                const img = this.getAttribute('data-img');
+
+                const index = wishlist.findIndex(item => item.name === name);
+
+                if (index === -1) {
+                    // Add to wishlist
+                    wishlist.push({ name, price, img });
+                } else {
+                    // Remove from wishlist
+                    wishlist.splice(index, 1);
+                }
+
+                // Storage mein save karo
+                localStorage.setItem('plantWishlist', JSON.stringify(wishlist));
+
+                // UI aur Badge dono ko update karo
+                updateWishlistUI();
+                updateWishlistBadge();
+            });
+        });
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,961 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outdoor Plants</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/7d5b9c692b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="plants.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">🌿 Plant Oasis</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto fw-semibold align-items-center">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="IndoorPlants.html">Indoor</a></li>
+                    <li class="nav-item"><a class="nav-link" href="OutDoorPlant.html">Outdoor</a></li>
+                    <li class="nav-item"><a class="nav-link" href="FloweringPlants.html">Flowering</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="Tree.html">Trees</a></li>
+                    <li class="nav-item ms-lg-3 mt-2 mt-lg-0">
+                        <a href="Wishlist.html" class="nav-link position-relative d-inline-block p-0" title="Wishlist" style="line-height: 1;">  
+                            <div class="wishlist-nav-icon">
+                                <i class="fa-solid fa-heart"></i>
+                            </div>
+                            <span id="wishlist-badge" class="position-absolute badge rounded-pill bg-danger fw-bold d-none" 
+                                style="font-size: 0.65rem; padding: 0.25em 0.45em; top: -5px; right: -5px; z-index: 5; border: 1px solid white; box-shadow: 0 2px 5px rgba(0,0,0,0.2);">
+                                0
+                            </span>
+                        </a>
+                    </li>
+                    <!-- 🛒 SHOPPING CART ICON (Yeh navbar ke andar jod diya) -->
+                    <li class="nav-item ms-lg-3 mt-2 mt-lg-0">
+                        <a href="Cart.html" class="text-white position-relative fs-5" id="cart-icon">
+                            <i class="fas fa-shopping-cart"></i>
+                            <!-- 🔴 Cart Counter Badge -->
+                            <span id="cart-count" class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger" style="font-size: 0.6rem;">
+                                0
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- 🏡 OUTDOOR PLANTS SECTION START HERE -->
+<div class="container py-5">
+    <div class="text-center mb-5">
+        <h2 class="fw-bold text-success">Our Premium Trees</h2>
+        <p class="text-muted">Hardy, sun-loving, and evergreen -the perfect additions to your dream garden</p>
+        <p class="text-muted" style="font-size: 0.9rem;">
+            <i class="fa-solid fa-circle-info" style="color: #28a745; margin-right: 5px;"></i> 
+            <em>All plants are delivered in polybags in a compact size.</em>
+        </p>
+    </div>
+
+    <!-- Plants Card Grid -->
+    <div class="row g-4">
+        <!-- 1. Mango Tree -->
+        <div class="col-md-4 col-sm-6 mb-4">
+            <div class="card h-100 shadow-sm custom-plant-card">
+                <img src="https://5.imimg.com/data5/ANDROID/Default/2021/10/EW/PZ/NV/61532543/product-jpeg-500x500.jpg" class="card-img-top plant-img" alt="Amrapali Mango">
+                <div class="card-body text-center">
+                    <h5 class="card-title fw-bold plant-title">Amrapali Mango </h5>
+                    <p class="card-text plant-text">The king of fruits, perfect for large gardens and provides delicious harvests.</p>
+                    <span class="fw-bold d-block mb-3 plant-price"><i class="fa-solid fa-indian-rupee-sign"></i> 499</span>
+                    <div class="d-flex gap-2 justify-content-center align-items-center">
+                        <button class="btn btn-success rounded-pill add-to-cart-btn flex-grow-1">Add to Cart</button>
+                        <button class="btn btn-outline-danger wishlist-btn" data-name="Amrapali Mango" data-price="499" data-img="https://5.imimg.com/data5/ANDROID/Default/2021/10/EW/PZ/NV/61532543/product-jpeg-500x500.jpg">
+                            <i class="fa-regular fa-heart"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 2. Guava Tree -->
+        <div class="col-md-4 col-sm-6 mb-4">
+            <div class="card h-100 shadow-sm custom-plant-card">
+                <img src="https://5.imimg.com/data5/HQ/PX/GLADMIN-14372525/guava-nursery-plant-500x500.jpg" class="card-img-top plant-img" alt="Guava Tree">
+                <div class="card-body text-center">
+                    <h5 class="card-title fw-bold plant-title">Guava Tree</h5>
+                    <p class="card-text plant-text">Fast-growing, produces sweet and crunchy fruits throughout the season.</p>
+                    <span class="fw-bold d-block mb-3 plant-price"><i class="fa-solid fa-indian-rupee-sign"></i> 349</span>
+                    <div class="d-flex gap-2 justify-content-center align-items-center">
+                        <button class="btn btn-success rounded-pill add-to-cart-btn flex-grow-1">Add to Cart</button>
+                        <button class="btn btn-outline-danger wishlist-btn" data-name="Guava Tree" data-price="349" data-img="https://5.imimg.com/data5/HQ/PX/GLADMIN-14372525/guava-nursery-plant-500x500.jpg">
+                            <i class="fa-regular fa-heart"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 3. Lemon Tree -->
+        <div class="col-md-4 col-sm-6 mb-4">
+            <div class="card h-100 shadow-sm custom-plant-card">
+                <img src="https://th.bing.com/th/id/R.a0b0b11f16f767bef8b1a88e6e4e1170?rik=3Hnz9DdwcXoVVQ&riu=http%3a%2f%2fplantncr.com%2fcdn%2fshop%2ffiles%2fUntitled9_20250923202618.png%3fv%3d1758678399&ehk=Ffkzh8wLCXqyqugXWFlLxwinVEoNwPol2JQNtNtsmxY%3d&risl=1&pid=ImgRaw&r=0" class="card-img-top plant-img" alt="Lemon Tree">
+                <div class="card-body text-center">
+                    <h5 class="card-title fw-bold plant-title">Lemon Tree</h5>
+                    <p class="card-text plant-text">Small, bushy, and provides fresh tangy fruits throughout the year.</p>
+                    <span class="fw-bold d-block mb-3 plant-price"><i class="fa-solid fa-indian-rupee-sign"></i> 199</span>
+                    <div class="d-flex gap-2 justify-content-center align-items-center">
+                        <button class="btn btn-success rounded-pill add-to-cart-btn flex-grow-1">Add to Cart</button>
+                        <button class="btn btn-outline-danger wishlist-btn" data-name="Lemon Tree" data-price="199" data-img="https://th.bing.com/th/id/R.a0b0b11f16f767bef8b1a88e6e4e1170?rik=3Hnz9DdwcXoVVQ&riu=http%3a%2f%2fplantncr.com%2fcdn%2fshop%2ffiles%2fUntitled9_20250923202618.png%3fv%3d1758678399&ehk=Ffkzh8wLCXqyqugXWFlLxwinVEoNwPol2JQNtNtsmxY%3d&risl=1&pid=ImgRaw&r=0">
+                            <i class="fa-regular fa-heart"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 4. Pomegranate Tree -->
+        <div class="col-md-4 col-sm-6 mb-4">
+            <div class="card h-100 shadow-sm custom-plant-card">
+                <img src="https://th.bing.com/th/id/R.8315da91e57cb6ff8ac642b26eb9b701?rik=g%2fl1DvgEcRmFIw&riu=http%3a%2f%2f5.imimg.com%2fdata5%2fSELLER%2fDefault%2f2023%2f5%2f310770567%2fTH%2fHX%2fBQ%2f2229642%2fpomegranate-anar-fruit-plant-1000x1000.jpeg&ehk=%2bUIRGTJKknKgYL2i%2ffNyBusVk3aF4Fpj6ab0T7CjtGo%3d&risl=&pid=ImgRaw&r=0" class="card-img-top plant-img" alt="Pomegranate Tree">
+                <div class="card-body text-center">
+                    <h5 class="card-title fw-bold plant-title">Pomegranate Tree</h5>
+                    <p class="card-text plant-text">Beautiful flowers followed by nutritious red ruby-like fruits.</p>
+                    <span class="fw-bold d-block mb-3 plant-price"><i class="fa-solid fa-indian-rupee-sign"></i> 449</span>
+                    <div class="d-flex gap-2 justify-content-center align-items-center">
+                        <button class="btn btn-success rounded-pill add-to-cart-btn flex-grow-1">Add to Cart</button>
+                        <button class="btn btn-outline-danger wishlist-btn" data-name="Pomegranate Tree" data-price="449" data-img="https://th.bing.com/th/id/R.8315da91e57cb6ff8ac642b26eb9b701?rik=g%2fl1DvgEcRmFIw&riu=http%3a%2f%2f5.imimg.com%2fdata5%2fSELLER%2fDefault%2f2023%2f5%2f310770567%2fTH%2fHX%2fBQ%2f2229642%2fpomegranate-anar-fruit-plant-1000x1000.jpeg&ehk=%2bUIRGTJKknKgYL2i%2ffNyBusVk3aF4Fpj6ab0T7CjtGo%3d&risl=&pid=ImgRaw&r=0">
+                            <i class="fa-regular fa-heart"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 5. Papaya Tree -->
+        <div class="col-md-4 col-sm-6 mb-4">
+            <div class="card h-100 shadow-sm custom-plant-card">
+                <img src="https://5.imimg.com/data5/ANDROID/Default/2021/2/CE/CK/AL/109107315/product-jpeg-500x500.jpg" class="card-img-top plant-img" alt="Papaya Tree">
+                <div class="card-body text-center">
+                    <h5 class="card-title fw-bold plant-title">Papaya Tree</h5>
+                    <p class="card-text plant-text">Fast-growing tree, perfect for small sunny spaces in your backyard.</p>
+                    <span class="fw-bold d-block mb-3 plant-price"><i class="fa-solid fa-indian-rupee-sign"></i> 149</span>
+                    <div class="d-flex gap-2 justify-content-center align-items-center">
+                        <button class="btn btn-success rounded-pill add-to-cart-btn flex-grow-1">Add to Cart</button>
+                        <button class="btn btn-outline-danger wishlist-btn" data-name="Papaya Tree" data-price="149" data-img="https://5.imimg.com/data5/ANDROID/Default/2021/2/CE/CK/AL/109107315/product-jpeg-500x500.jpg">
+                            <i class="fa-regular fa-heart"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 col-sm-6 mb-4">
+            <div class="card h-100 shadow-sm custom-plant-card">
+                <img src="https://tse1.mm.bing.net/th/id/OIP.xCK5d2-wiB80Q9ydGAtPJwHaHa?rs=1&pid=ImgDetMain&o=7&rm=3" class="card-img-top plant-img" alt="Neem Tree">
+                <div class="card-body text-center">
+                    <h5 class="card-title fw-bold plant-title">Neem Tree</h5>
+                    <p class="card-text plant-text">A medicinal marvel that provides cooling shade and purifies the air.</p>
+                    <span class="fw-bold d-block mb-3 plant-price"><i class="fa-solid fa-indian-rupee-sign"></i> 299</span>
+                    <div class="d-flex gap-2 justify-content-center align-items-center">
+                        <button class="btn btn-success rounded-pill add-to-cart-btn flex-grow-1">Add to Cart</button>
+                        <button class="btn btn-outline-danger wishlist-btn" data-name="Neem Tree" data-price="299" data-img="https://tse1.mm.bing.net/th/id/OIP.xCK5d2-wiB80Q9ydGAtPJwHaHa?rs=1&pid=ImgDetMain&o=7&rm=3">
+                            <i class="fa-regular fa-heart"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 col-sm-6 mb-4">
+            <div class="card h-100 shadow-sm custom-plant-card">
+                <img src="https://i.pinimg.com/originals/a0/02/78/a00278c5ef532234c41676e23066cf16.jpg" class="card-img-top plant-img" alt="Curry Leaf Tree">
+                <div class="card-body text-center">
+                    <h5 class="card-title fw-bold plant-title">Curry Leaf Tree</h5>
+                    <p class="card-text plant-text">Essential for every kitchen, aromatic leaves for perfect tempering.</p>
+                    <span class="fw-bold d-block mb-3 plant-price"><i class="fa-solid fa-indian-rupee-sign"></i> 249</span>
+                    <div class="d-flex gap-2 justify-content-center align-items-center">
+                        <button class="btn btn-success rounded-pill add-to-cart-btn flex-grow-1">Add to Cart</button>
+                        <button class="btn btn-outline-danger wishlist-btn" data-name="Curry Leaf Tree" data-price="249" data-img="https://i.pinimg.com/originals/a0/02/78/a00278c5ef532234c41676e23066cf16.jpg">
+                            <i class="fa-regular fa-heart"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 col-sm-6 mb-4">
+            <div class="card h-100 shadow-sm custom-plant-card">
+                <img src="https://m.media-amazon.com/images/I/81eRalQRJZL.jpg" class="card-img-top plant-img" alt="Ashoka Tree">
+                <div class="card-body text-center">
+                    <h5 class="card-title fw-bold plant-title">Ashoka Tree</h5>
+                    <p class="card-text plant-text">A tall, evergreen beauty known for privacy screens and sound reduction.</p>
+                    <span class="fw-bold d-block mb-3 plant-price"><i class="fa-solid fa-indian-rupee-sign"></i> 599</span>
+                    <div class="d-flex gap-2 justify-content-center align-items-center">
+                        <button class="btn btn-success rounded-pill add-to-cart-btn flex-grow-1">Add to Cart</button>
+                        <button class="btn btn-outline-danger wishlist-btn" data-name="Ashoka Tree" data-price="599" data-img="https://m.media-amazon.com/images/I/81eRalQRJZL.jpg"><i class="fa-regular fa-heart">
+                            </i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 col-sm-6 mb-4">
+            <div class="card h-100 shadow-sm custom-plant-card">
+                <img src="https://www.arunaluplants.com/wp-content/uploads/2019/10/medicinal-plants-in-sri-lanka.jpg" class="card-img-top plant-img" alt="Jamun Tree">
+                <div class="card-body text-center">
+                    <h5 class="card-title fw-bold plant-title">Jamun Tree</h5>
+                    <p class="card-text plant-text">Provides thick shade and delicious, healthy summer berries.</p>
+                    <span class="fw-bold d-block mb-3 plant-price"><i class="fa-solid fa-indian-rupee-sign"></i> 450</span>
+                    <div class="d-flex gap-2 justify-content-center align-items-center">
+                        <button class="btn btn-success rounded-pill add-to-cart-btn flex-grow-1">Add to Cart</button>
+                        <button class="btn btn-outline-danger wishlist-btn" data-name="https://www.arunaluplants.com/wp-content/uploads/2019/10/medicinal-plants-in-sri-lanka.jpg" data-price="450" data-img="images/jamun.jpg">
+                            <i class="fa-regular fa-heart"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 col-sm-6 mb-4">
+            <div class="card h-100 shadow-sm custom-plant-card">
+                <img src="https://ambuliplantshop.com/wp-content/uploads/2024/05/Cinnamon-Tree-300x400.webp" class="card-img-top plant-img" alt="Custard Apple Tree">
+                <div class="card-body text-center">
+                    <h5 class="card-title fw-bold plant-title">Custard Apple Tree</h5>
+                    <p class="card-text plant-text">Drought-tolerant tree producing sweet, creamy, and nutritious fruit.</p>
+                    <span class="fw-bold d-block mb-3 plant-price"><i class="fa-solid fa-indian-rupee-sign"></i> 399</span>
+                    <div class="d-flex gap-2 justify-content-center align-items-center">
+                        <button class="btn btn-success rounded-pill add-to-cart-btn flex-grow-1">Add to Cart</button>
+                        <button class="btn btn-outline-danger wishlist-btn" data-name="Custard Apple Tree" data-price="399" data-img="https://ambuliplantshop.com/wp-content/uploads/2024/05/Cinnamon-Tree-300x400.webp">
+                            <i class="fa-regular fa-heart"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 col-sm-6 mb-4">
+            <div class="card h-100 shadow-sm custom-plant-card">
+                <img src="https://mobileimages.lowes.com/productimages/db7be8ec-5dea-41cb-8f05-ce3d4f6ce73f/66381631.jpeg?size=pdhism" class="card-img-top plant-img" alt="Banyan Tree">
+                <div class="card-body text-center">
+                    <h5 class="card-title fw-bold plant-title">Banyan Tree</h5>
+                    <p class="card-text plant-text">Symbol of longevity, perfect for large gardens needing majestic presence.</p>
+                    <span class="fw-bold d-block mb-3 plant-price"><i class="fa-solid fa-indian-rupee-sign"></i> 799</span>
+                    <div class="d-flex gap-2 justify-content-center align-items-center">
+                        <button class="btn btn-success rounded-pill add-to-cart-btn flex-grow-1">Add to Cart</button>
+                        <button class="btn btn-outline-danger wishlist-btn" data-name="Banyan Tree" data-price="799" data-img="https://mobileimages.lowes.com/productimages/db7be8ec-5dea-41cb-8f05-ce3d4f6ce73f/66381631.jpeg?size=pdhism">
+                            <i class="fa-regular fa-heart"></i>
+                            </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 col-sm-6 mb-4">
+            <div class="card h-100 shadow-sm custom-plant-card">
+                <img src="https://5.imimg.com/data5/SELLER/Default/2020/9/QA/AA/FD/112891567/fanas-jack-fruit-plant-1000x1000.jpg" class="card-img-top plant-img" alt="Jackfruit Tree">
+                <div class="card-body text-center">
+                    <h5 class="card-title fw-bold plant-title">Jackfruit Tree</h5>
+                    <p class="card-text plant-text">A massive yield tree, perfect for sustainable food production at home.</p>
+                    <span class="fw-bold d-block mb-3 plant-price"><i class="fa-solid fa-indian-rupee-sign"></i> 549</span>
+                    <div class="d-flex gap-2 justify-content-center align-items-center">
+                        <button class="btn btn-success rounded-pill add-to-cart-btn flex-grow-1">Add to Cart</button>
+                        <button class="btn btn-outline-danger wishlist-btn" data-name="Jackfruit Tree" data-price="549" data-img="https://5.imimg.com/data5/SELLER/Default/2020/9/QA/AA/FD/112891567/fanas-jack-fruit-plant-1000x1000.jpg">
+                            <i class="fa-regular fa-heart"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 col-sm-6 mb-4">
+            <div class="card h-100 shadow-sm custom-plant-card">
+                <img src="https://www.urvann.com/s/6176774ef575bbd2b3331c8a/68f8c3ab40df5d53a2a1e6f1/1-60--800x800.jpg" class="card-img-top plant-img" alt="Chiku Tree">
+                <div class="card-body text-center">
+                    <h5 class="card-title fw-bold plant-title">Sapodilla (Chiku) Tree</h5>
+                    <p class="card-text plant-text">Slow-growing evergreen tree with delicious malty-flavored fruits.</p>
+                    <span class="fw-bold d-block mb-3 plant-price"><i class="fa-solid fa-indian-rupee-sign"></i> 429</span>
+                    <div class="d-flex gap-2 justify-content-center align-items-center">
+                        <button class="btn btn-success rounded-pill add-to-cart-btn flex-grow-1">Add to Cart</button>
+                        <button class="btn btn-outline-danger wishlist-btn" data-name="Sapodilla Tree" data-price="429" data-img="https://www.urvann.com/s/6176774ef575bbd2b3331c8a/68f8c3ab40df5d53a2a1e6f1/1-60--800x800.jpg"><i class="fa-regular fa-heart">
+                            </i>
+                    </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 col-sm-6 mb-4">
+            <div class="card h-100 shadow-sm custom-plant-card">
+                <img src="https://dukaan.b-cdn.net/1000x1000/webp/media/5b2ea1d3-972d-44f3-8120-e852d26fd091.jpg" class="card-img-top plant-img" alt="Tamarind Tree">
+                <div class="card-body text-center">
+                    <h5 class="card-title fw-bold plant-title">Tamarind Tree</h5>
+                    <p class="card-text plant-text">Iconic tree offering dense shade and sour, useful pods.</p>
+                    <span class="fw-bold d-block mb-3 plant-price"><i class="fa-solid fa-indian-rupee-sign"></i> 349</span>
+                    <div class="d-flex gap-2 justify-content-center align-items-center">
+                        <button class="btn btn-success rounded-pill add-to-cart-btn flex-grow-1">Add to Cart</button>
+                        <button class="btn btn-outline-danger wishlist-btn" data-name="Tamarind Tree" data-price="349" data-img="https://dukaan.b-cdn.net/1000x1000/webp/media/5b2ea1d3-972d-44f3-8120-e852d26fd091.jpg"><i class="fa-regular fa-heart">
+                            </i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 col-sm-6 mb-4">
+            <div class="card h-100 shadow-sm custom-plant-card">
+                <img src="https://th.bing.com/th/id/R.22040190a3c254785a5e070a8c511696?rik=lQ1Kl0tuKQhACg&riu=http%3a%2f%2fplantlinenurseries.com.au%2fimages%2fplants%2fdelonix_regia_200L.jpg&ehk=Q2ICH8pNA39jqzAlTiVpx7OWZyf8mRcvmyZlxoIcEss%3d&risl=&pid=ImgRaw&r=0" class="card-img-top plant-img" alt="Gulmohar Tree">
+                <div class="card-body text-center">
+                    <h5 class="card-title fw-bold plant-title">Gulmohar Tree</h5>
+                    <p class="card-text plant-text">Famous for its spectacular fire-red flowers during summers.</p>
+                    <span class="fw-bold d-block mb-3 plant-price"><i class="fa-solid fa-indian-rupee-sign"></i> 499</span>
+                    <div class="d-flex gap-2 justify-content-center align-items-center">
+                        <button class="btn btn-success rounded-pill add-to-cart-btn flex-grow-1">Add to Cart</button>
+                        <button class="btn btn-outline-danger wishlist-btn" data-name="Gulmohar Tree" data-price="499" data-img="https://th.bing.com/th/id/R.22040190a3c254785a5e070a8c511696?rik=lQ1Kl0tuKQhACg&riu=http%3a%2f%2fplantlinenurseries.com.au%2fimages%2fplants%2fdelonix_regia_200L.jpg&ehk=Q2ICH8pNA39jqzAlTiVpx7OWZyf8mRcvmyZlxoIcEss%3d&risl=&pid=ImgRaw&r=0"><i class="fa-regular fa-heart">   
+                            </i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 col-sm-6 mb-4">
+            <div class="card h-100 shadow-sm custom-plant-card">
+                <img src="https://5.imimg.com/data5/ANDROID/Default/2023/8/334709236/XD/RZ/EQ/180451780/product-jpeg-500x500.jpg" class="card-img-top plant-img" alt="Silver Oak">
+                <div class="card-body text-center">
+                    <h5 class="card-title fw-bold plant-title">Silver Oak</h5>
+                    <p class="card-text plant-text">Tall, slender tree with silvery leaves that shimmer in the breeze.</p>
+                    <span class="fw-bold d-block mb-3 plant-price"><i class="fa-solid fa-indian-rupee-sign"></i> 650</span>
+                    <div class="d-flex gap-2 justify-content-center align-items-center">
+                        <button class="btn btn-success rounded-pill add-to-cart-btn flex-grow-1">Add to Cart</button>
+                        <button class="btn btn-outline-danger wishlist-btn" data-name="Silver Oak" data-price="650" data-img="https://5.imimg.com/data5/ANDROID/Default/2023/8/334709236/XD/RZ/EQ/180451780/product-jpeg-500x500.jpg"><i class="fa-regular fa-heart"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 col-sm-6 mb-4">
+            <div class="card h-100 shadow-sm custom-plant-card">
+                <img src="https://i.etsystatic.com/60956173/r/il/8960b7/7085535355/il_1080xN.7085535355_se85.jpg" class="card-img-top plant-img" alt="Miyazaki Mango">
+                <div class="card-body text-center">
+                    <h5 class="card-title fw-bold plant-title">Miyazaki Mango</h5>
+                    <p class="card-text plant-text">It is rare,ruby-red Japanese delicacy renowened for its intense sweetness and, <b>fiberless texture</b>.</p>
+                    <span class="fw-bold d-block mb-3 plant-price"><i class="fa-solid fa-indian-rupee-sign"></i> 550</span>
+                    <div class="d-flex gap-2 justify-content-center align-items-center">
+                        <button class="btn btn-success rounded-pill add-to-cart-btn flex-grow-1">Add to Cart</button>
+                        <button class="btn btn-outline-danger wishlist-btn" data-name="Miyazaki Mango" data-price="550" data-img="https://i.etsystatic.com/60956173/r/il/8960b7/7085535355/il_1080xN.7085535355_se85.jpg"><i class="fa-regular fa-heart"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 col-sm-6 mb-4">
+            <div class="card h-100 shadow-sm custom-plant-card">
+                <img src="https://5.imimg.com/data5/SELLER/Default/2023/9/343791910/VE/NN/OM/64817367/green-amla-fruit-plant-1000x1000.jpeg" class="card-img-top plant-img" alt="Amla Tree">
+                <div class="card-body text-center">
+                    <h5 class="card-title fw-bold plant-title">Amla Tree</h5>
+                    <p class="card-text plant-text">Hardy tree that bears sweet, nutritious fruits year-round.</p>
+                    <span class="fw-bold d-block mb-3 plant-price"><i class="fa-solid fa-indian-rupee-sign"></i> 320</span>
+                    <div class="d-flex gap-2 justify-content-center align-items-center">
+                        <button class="btn btn-success rounded-pill add-to-cart-btn flex-grow-1">Add to Cart</button>
+                        <button class="btn btn-outline-danger wishlist-btn" data-name="Amla Tree" data-price="320" data-img="https://5.imimg.com/data5/SELLER/Default/2023/9/343791910/VE/NN/OM/64817367/green-amla-fruit-plant-1000x1000.jpeg"><i class="fa-regular fa-heart"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 col-sm-6 mb-4">
+            <div class="card h-100 shadow-sm custom-plant-card">
+                <img src="https://5.imimg.com/data5/SELLER/Default/2023/10/356804063/WQ/DJ/BB/29067762/coconut-tree-sapling-1000x1000.jpeg" class="card-img-top plant-img" alt="Coconut Tree">
+                <div class="card-body text-center">
+                    <h5 class="card-title fw-bold plant-title">Coconut Tree</h5>
+                    <p class="card-text plant-text">The ultimate coastal beauty for a serene and tropical garden look.</p>
+                    <span class="fw-bold d-block mb-3 plant-price"><i class="fa-solid fa-indian-rupee-sign"></i> 850</span>
+                    <div class="d-flex gap-2 justify-content-center align-items-center">
+                        <button class="btn btn-success rounded-pill add-to-cart-btn flex-grow-1">Add to Cart</button>
+                        <button class="btn btn-outline-danger wishlist-btn" data-name="Coconut Tree" data-price="850" data-img="https://5.imimg.com/data5/SELLER/Default/2023/10/356804063/WQ/DJ/BB/29067762/coconut-tree-sapling-1000x1000.jpeg"><i class="fa-regular fa-heart"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 col-sm-6 mb-4">
+            <div class="card h-100 shadow-sm custom-plant-card">
+                <img src="https://i.pinimg.com/originals/9e/cb/7d/9ecb7df2c4d3c6b97603ba1362eb715d.jpg" class="card-img-top plant-img" alt="Peepal Tree">
+                <div class="card-body text-center">
+                    <h5 class="card-title fw-bold plant-title">Peepal Tree</h5>
+                    <p class="card-text plant-text">Sacred and majestic, providing oxygen and calm to your space.</p>
+                    <span class="fw-bold d-block mb-3 plant-price"><i class="fa-solid fa-indian-rupee-sign"></i> 450</span>
+                    <div class="d-flex gap-2 justify-content-center align-items-center">
+                        <button class="btn btn-success rounded-pill add-to-cart-btn flex-grow-1">Add to Cart</button>
+                        <button class="btn btn-outline-danger wishlist-btn" data-name="Peepal Tree" data-price="450" data-img="https://i.pinimg.com/originals/9e/cb/7d/9ecb7df2c4d3c6b97603ba1362eb715d.jpg"><i class="fa-regular fa-heart"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 col-sm-6 mb-4">
+            <div class="card h-100 shadow-sm custom-plant-card">
+                <img src="https://5.imimg.com/data5/SELLER/Default/2024/12/475204765/SH/ZX/PV/235639094/mahagani-3-500x500.jpg" class="card-img-top plant-img" alt="Mahogany Tree">
+                <div class="card-body text-center">
+                    <h5 class="card-title fw-bold plant-title">Mahogany Tree</h5>
+                    <p class="card-text plant-text">Valued for its high-quality wood and large, impressive stature.</p>
+                    <span class="fw-bold d-block mb-3 plant-price"><i class="fa-solid fa-indian-rupee-sign"></i> 950</span>
+                    <div class="d-flex gap-2 justify-content-center align-items-center">
+                        <button class="btn btn-success rounded-pill add-to-cart-btn flex-grow-1">Add to Cart</button>
+                        <button class="btn btn-outline-danger wishlist-btn" data-name="Mahogany Tree" data-price="950" data-img="https://5.imimg.com/data5/SELLER/Default/2024/12/475204765/SH/ZX/PV/235639094/mahagani-3-500x500.jpg"><i class="fa-regular fa-heart"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 col-sm-6 mb-4">
+            <div class="card h-100 shadow-sm custom-plant-card">
+                <img src="https://5.imimg.com/data5/ANDROID/Default/2023/4/300469014/QB/EV/HR/95481437/product-jpeg-1000x1000.jpg" class="card-img-top plant-img" alt="Teak Tree">
+                <div class="card-body text-center">
+                    <h5 class="card-title fw-bold plant-title">Teak Tree</h5>
+                    <p class="card-text plant-text">A sturdy and durable tree known for its world-class timber quality.</p>
+                    <span class="fw-bold d-block mb-3 plant-price"><i class="fa-solid fa-indian-rupee-sign"></i> 1100</span>
+                    <div class="d-flex gap-2 justify-content-center align-items-center">
+                        <button class="btn btn-success rounded-pill add-to-cart-btn flex-grow-1">Add to Cart</button>
+                        <button class="btn btn-outline-danger wishlist-btn" data-name="Teak Tree" data-price="1100" data-img="https://5.imimg.com/data5/ANDROID/Default/2023/4/300469014/QB/EV/HR/95481437/product-jpeg-1000x1000.jpg"><i class="fa-regular fa-heart"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+ <!-- 36. Royal Palm -->
+        <div class="col-md-4 col-sm-6 mb-4">
+            <div class="card h-100 shadow-sm custom-plant-card">
+                <img src="https://5.imimg.com/data5/SELLER/Default/2024/7/438974582/UR/SZ/NX/69232098/whatsapp-image-2024-07-25-at-06-32-19-1-1000x1000.jpeg" class="card-img-top plant-img" alt="Royal Palm">
+                <div class="card-body text-center">
+                    <h5 class="card-title fw-bold plant-title">Royal Palm</h5>
+                    <p class="card-text plant-text">A majestic, tall palm that adds a grand, resort-like feel to your garden.</p>
+                    <span class="fw-bold d-block mb-3 plant-price"><i class="fa-solid fa-indian-rupee-sign"></i> 899</span>
+                    <div class="d-flex gap-2 justify-content-center align-items-center">
+                        <button class="btn btn-success rounded-pill add-to-cart-btn flex-grow-1">Add to Cart</button>
+                        <button class="btn btn-outline-danger wishlist-btn" data-name="Royal Palm" data-price="899" data-img="https://5.imimg.com/data5/SELLER/Default/2024/7/438974582/UR/SZ/NX/69232098/whatsapp-image-2024-07-25-at-06-32-19-1-1000x1000.jpeg"><i class="fa-regular fa-heart"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 37. Magnolia -->
+        <div class="col-md-4 col-sm-6 mb-4">
+            <div class="card h-100 shadow-sm custom-plant-card">
+                <img src="https://image.made-in-china.com/2f0j00PugbSoKqnpzy/Artificial-Magnolia-Leaf-Plant-in-Pot-80cm-H.jpg" class="card-img-top plant-img" alt="Magnolia">
+                <div class="card-body text-center">
+                    <h5 class="card-title fw-bold plant-title">Magnolia</h5>
+                    <p class="card-text plant-text">Stunning, fragrant, and large blossoms that make a bold statement.</p>
+                    <span class="fw-bold d-block mb-3 plant-price"><i class="fa-solid fa-indian-rupee-sign"></i> 750</span>
+                    <div class="d-flex gap-2 justify-content-center align-items-center">
+                        <button class="btn btn-success rounded-pill add-to-cart-btn flex-grow-1">Add to Cart</button>
+                        <button class="btn btn-outline-danger wishlist-btn" data-name="Magnolia" data-price="750" data-img="https://image.made-in-china.com/2f0j00PugbSoKqnpzy/Artificial-Magnolia-Leaf-Plant-in-Pot-80cm-H.jpg"><i class="fa-regular fa-heart"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 38. Olive Tree -->
+        <div class="col-md-4 col-sm-6 mb-4">
+            <div class="card h-100 shadow-sm custom-plant-card">
+                <img src="https://5.imimg.com/data5/ANDROID/Default/2022/9/WK/JQ/QX/149851298/product-jpeg-1000x1000.jpg" class="card-img-top plant-img" alt="Olive Tree">
+                <div class="card-body text-center">
+                    <h5 class="card-title fw-bold plant-title">Olive Tree</h5>
+                    <p class="card-text plant-text">An elegant, Mediterranean-inspired tree, symbolizing peace and longevity.</p>
+                    <span class="fw-bold d-block mb-3 plant-price"><i class="fa-solid fa-indian-rupee-sign"></i> 950</span>
+                    <div class="d-flex gap-2 justify-content-center align-items-center">
+                        <button class="btn btn-success rounded-pill add-to-cart-btn flex-grow-1">Add to Cart</button>
+                        <button class="btn btn-outline-danger wishlist-btn" data-name="Olive Tree" data-price="950" data-img="https://5.imimg.com/data5/ANDROID/Default/2022/9/WK/JQ/QX/149851298/product-jpeg-1000x1000.jpg"><i class="fa-regular fa-heart"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 39. Cherry Blossom -->
+        <div class="col-md-4 col-sm-6 mb-4">
+            <div class="card h-100 shadow-sm custom-plant-card">
+                <img src="https://tse2.mm.bing.net/th/id/OIP.B6F_sS0hAIid1sugyOb0PwHaHa?w=2000&h=2000&rs=1&pid=ImgDetMain&o=7&rm=3" class="card-img-top plant-img" alt="Cherry Blossom">
+                <div class="card-body text-center">
+                    <h5 class="card-title fw-bold plant-title">Cherry Blossom</h5>
+                    <p class="card-text plant-text">Breathtaking pink floral display, perfect for an aesthetic, dreamy garden.</p>
+                    <span class="fw-bold d-block mb-3 plant-price"><i class="fa-solid fa-indian-rupee-sign"></i> 1200</span>
+                    <div class="d-flex gap-2 justify-content-center align-items-center">
+                        <button class="btn btn-success rounded-pill add-to-cart-btn flex-grow-1">Add to Cart</button>
+                        <button class="btn btn-outline-danger wishlist-btn" data-name="Cherry Blossom" data-price="1200" data-img="https://tse2.mm.bing.net/th/id/OIP.B6F_sS0hAIid1sugyOb0PwHaHa?w=2000&h=2000&rs=1&pid=ImgDetMain&o=7&rm=3"><i class="fa-regular fa-heart"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 40. Jacaranda Tree -->
+        <div class="col-md-4 col-sm-6 mb-4">
+            <div class="card h-100 shadow-sm custom-plant-card">
+                <img src="https://ladybirdnursery.com.au/cdn/shop/files/Jacaranda-Tree-1.jpg?v=1765382952&width=1600" class="card-img-top plant-img" alt="Jacaranda Tree">
+                <div class="card-body text-center">
+                    <h5 class="card-title fw-bold plant-title">Jacaranda Tree</h5>
+                    <p class="card-text plant-text">Recognizable by its vibrant purple trumpet-shaped flowers</p>
+                    <span class="fw-bold d-block mb-3 plant-price"><i class="fa-solid fa-indian-rupee-sign"></i> 800</span>
+                    <div class="d-flex gap-2 justify-content-center align-items-center">
+                        <button class="btn btn-success rounded-pill add-to-cart-btn flex-grow-1">Add to Cart</button>
+                        <button class="btn btn-outline-danger wishlist-btn" data-name="Jacaranda Tree" data-price="800" data-img="https://ladybirdnursery.com.au/cdn/shop/files/Jacaranda-Tree-1.jpg?v=1765382952&width=1600"><i class="fa-regular fa-heart"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 41. Shami Tree -->
+        <div class="col-md-4 col-sm-6 mb-4">
+            <div class="card h-100 shadow-sm custom-plant-card">
+                <img src="https://th.bing.com/th/id/R.ae2e62b379d98023c4dfa84c73b3b55e?rik=I3CPvwA4VDiI%2fg&riu=http%3a%2f%2fharyali.co.in%2fcdn%2fshop%2ffiles%2fShamiin6InchNurseryBag_Free_Next-day_Delivery_haryali.co.in.jpg%3fv%3d1755233021&ehk=IYB8c%2bRI6xRDHNOq%2fzNxJKZ7SfJRDHlakCBobOJiXes%3d&risl=&pid=ImgRaw&r=0" class="card-img-top plant-img" alt="Shami ">
+                <div class="card-body text-center">
+                    <h5 class="card-title fw-bold plant-title">Shami</h5>
+                    <p class="card-text plant-text">The Shami plant is a sacred, hardy shrub brings positive energy.</p>
+                    <span class="fw-bold d-block mb-3 plant-price"><i class="fa-solid fa-indian-rupee-sign"></i> 650</span>
+                    <div class="d-flex gap-2 justify-content-center align-items-center">
+                        <button class="btn btn-success rounded-pill add-to-cart-btn flex-grow-1">Add to Cart</button>
+                        <button class="btn btn-outline-danger wishlist-btn" data-name="Shami" data-price="650" data-img="https://th.bing.com/th/id/R.ae2e62b379d98023c4dfa84c73b3b55e?rik=I3CPvwA4VDiI%2fg&riu=http%3a%2f%2fharyali.co.in%2fcdn%2fshop%2ffiles%2fShamiin6InchNurseryBag_Free_Next-day_Delivery_haryali.co.in.jpg%3fv%3d1755233021&ehk=IYB8c%2bRI6xRDHNOq%2fzNxJKZ7SfJRDHlakCBobOJiXes%3d&risl=&pid=ImgRaw&r=03"><i class="fa-regular fa-heart"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 46.Arjuna Tree-->
+        <div class="col-md-4 col-sm-6 mb-4">
+            <div class="card h-100 shadow-sm custom-plant-card">
+                <img src="https://5.imimg.com/data5/SELLER/Default/2025/1/480160963/WJ/CB/TB/238403957/arjun-tree-1000x1000.png" class="card-img-top plant-img" alt="Arjuna Tree">
+                <div class="card-body text-center">
+                    <h5 class="card-title fw-bold plant-title">Arjuna Tree</h5>
+                    <p class="card-text plant-text">Highly valued in Ayurveda for its heart-healthy properties.</p>
+                    <span class="fw-bold d-block mb-3 plant-price"><i class="fa-solid fa-indian-rupee-sign"></i> 480</span>
+                    <div class="d-flex gap-2 justify-content-center align-items-center">
+                        <button class="btn btn-success rounded-pill add-to-cart-btn flex-grow-1">Add to Cart</button>
+                        <button class="btn btn-outline-danger wishlist-btn" data-name="Arjuna Tree" data-price="480" data-img="https://5.imimg.com/data5/SELLER/Default/2025/1/480160963/WJ/CB/TB/238403957/arjun-tree-1000x1000.png"><i class="fa-regular fa-heart"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 47. Banyan Tree -->
+        <div class="col-md-4 col-sm-6 mb-4">
+            <div class="card h-100 shadow-sm custom-plant-card">
+                <img src="https://ambuliplantshop.com/wp-content/uploads/2025/05/Banyan-Tree-300x400.webp" class="card-img-top plant-img" alt="Banyan Tree">
+                <div class="card-body text-center">
+                    <h5 class="card-title fw-bold plant-title">Banyan Tree</h5>
+                    <p class="card-text plant-text">The Banyan tree is a sacred, hardy giant brings positive energy.</p>
+                    <span class="fw-bold d-block mb-3 plant-price"><i class="fa-solid fa-indian-rupee-sign"></i> 320</span>
+                    <div class="d-flex gap-2 justify-content-center align-items-center">
+                        <button class="btn btn-success rounded-pill add-to-cart-btn flex-grow-1">Add to Cart</button>
+                        <button class="btn btn-outline-danger wishlist-btn" data-name="Banyan Tree" data-price="320" data-img="https://ambuliplantshop.com/wp-content/uploads/2025/05/Banyan-Tree-300x400.webp"><i class="fa-regular fa-heart"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 48. Kadam Tree -->
+        <div class="col-md-4 col-sm-6 mb-4">
+            <div class="card h-100 shadow-sm custom-plant-card">
+                <img src="https://nurserylive.com/cdn/shop/products/nurserylive-kadam-tree-kadamb-plant-1-536990_525x700.jpg?v=1679750392" class="card-img-top plant-img" alt="Kadam Tree">
+                <div class="card-body text-center">
+                    <h5 class="card-title fw-bold plant-title">Kadam Tree</h5>
+                    <p class="card-text plant-text">The Kadam tree is a sacred, hardy beauty brings positive energy.</p>
+                    <span class="fw-bold d-block mb-3 plant-price"><i class="fa-solid fa-indian-rupee-sign"></i> 490</span>
+                    <div class="d-flex gap-2 justify-content-center align-items-center">
+                        <button class="btn btn-success rounded-pill add-to-cart-btn flex-grow-1">Add to Cart</button>
+                        <button class="btn btn-outline-danger wishlist-btn" data-name="Kadam Tree" data-price="490" data-img="https://nurserylive.com/cdn/shop/products/nurserylive-kadam-tree-kadamb-plant-1-536990_525x700.jpg?v=1679750392"><i class="fa-regular fa-heart"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 49. Palash Tree -->
+        <div class="col-md-4 col-sm-6 mb-4">
+            <div class="card h-100 shadow-sm custom-plant-card">
+                <img src="https://nurserynisarga.in/wp-content/uploads/2022/10/Buy-Palash-Tesu-Butea-monosperma-White-Flame-of-forest-Online1-Plant-600x600.webp" class="card-img-top plant-img" alt="Palash">
+                <div class="card-body text-center">
+                    <h5 class="card-title fw-bold plant-title">Palash </h5>
+                    <p class="card-text plant-text">Known as <b>'Flame of the Forest'</b> for ites bright orange flowers that cover tree.</p>
+                    <span class="fw-bold d-block mb-3 plant-price"><i class="fa-solid fa-indian-rupee-sign"></i> 520</span>
+                    <div class="d-flex gap-2 justify-content-center align-items-center">
+                        <button class="btn btn-success rounded-pill add-to-cart-btn flex-grow-1">Add to Cart</button>
+                        <button class="btn btn-outline-danger wishlist-btn" data-name="Palash" data-price="520" data-img="https://nurserynisarga.in/wp-content/uploads/2022/10/Buy-Palash-Tesu-Butea-monosperma-White-Flame-of-forest-Online1-Plant-600x600.webp"><i class="fa-regular fa-heart"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 50. Sal Tree -->
+        <div class="col-md-4 col-sm-6 mb-4">
+            <div class="card h-100 shadow-sm custom-plant-card">
+                <img src="https://m.media-amazon.com/images/I/81SvYArCxrL._SL1280_.jpg" class="card-img-top plant-img" alt="Sal Tree">
+                <div class="card-body text-center">
+                    <h5 class="card-title fw-bold plant-title">Sal Tree</h5>
+                    <p class="card-text plant-text">A highly significant timbler tree in India, found extensively in central and northern forests,.</p>
+                    <span class="fw-bold d-block mb-3 plant-price"><i class="fa-solid fa-indian-rupee-sign"></i> 1050</span>
+                    <div class="d-flex gap-2 justify-content-center align-items-center">
+                        <button class="btn btn-success rounded-pill add-to-cart-btn flex-grow-1">Add to Cart</button>
+                        <button class="btn btn-outline-danger wishlist-btn" data-name="Sal Tree" data-price="1050" data-img="https://m.media-amazon.com/images/I/81SvYArCxrL._SL1280_.jpg"><i class="fa-regular fa-heart"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 52. Rubber Tree -->
+        <div class="col-md-4 col-sm-6 mb-4">
+            <div class="card h-100 shadow-sm custom-plant-card">
+                <img src="https://th.bing.com/th/id/R.d70bd2b0dde45ce0e39f6999ddb60eb9?rik=jNiaed5HsS788g&riu=http%3a%2f%2fnurserylive.com%2fcdn%2fshop%2fproducts%2fnurserylive-g-plants-rubber-tree-rubber-plant-ficus-elastica-plant.jpg%3fv%3d1680766173&ehk=1tJH%2fIGVur8R%2bq12vbQvogbrXxD5dSWSu7WkGTtRJGc%3d&risl=&pid=ImgRaw&r=0" class="card-img-top plant-img" alt="Rubber Tree">
+                <div class="card-body text-center">
+                    <h5 class="card-title fw-bold plant-title">Rubber Tree</h5>
+                    <p class="card-text plant-text">Cultivated in southern India for itx latex sap used to make rubber.</p>
+                    <span class="fw-bold d-block mb-3 plant-price"><i class="fa-solid fa-indian-rupee-sign"></i> 600</span>
+                    <div class="d-flex gap-2 justify-content-center align-items-center">
+                        <button class="btn btn-success rounded-pill add-to-cart-btn flex-grow-1">Add to Cart</button>
+                        <button class="btn btn-outline-danger wishlist-btn" data-name="Rubber Tree" data-price="600" data-img="https://th.bing.com/th/id/R.d70bd2b0dde45ce0e39f6999ddb60eb9?rik=jNiaed5HsS788g&riu=http%3a%2f%2fnurserylive.com%2fcdn%2fshop%2fproducts%2fnurserylive-g-plants-rubber-tree-rubber-plant-ficus-elastica-plant.jpg%3fv%3d1680766173&ehk=1tJH%2fIGVur8R%2bq12vbQvogbrXxD5dSWSu7WkGTtRJGc%3d&risl=&pid=ImgRaw&r=0"><i class="fa-regular fa-heart"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+        <!-- 53.Sandalwood Tree -->
+        <div class="col-md-4 col-sm-6 mb-4">
+            <div class="card h-100 shadow-sm custom-plant-card">
+                <img src="https://5.imimg.com/data5/SELLER/Default/2023/8/339167761/IN/FT/UZ/139153589/white-sandalwood-plant-1000x1000.jpeg" class="card-img-top plant-img" alt="Sandalwood">
+                <div class="card-body text-center">
+                    <h5 class="card-title fw-bold plant-title">Sandalwood</h5>
+                    <p class="card-text plant-text">Highly prized for tis fragrant heartwood, iconic to South India.</p>
+                    <span class="fw-bold d-block mb-3 plant-price"><i class="fa-solid fa-indian-rupee-sign"></i> 720</span>
+                    <div class="d-flex gap-2 justify-content-center align-items-center">
+                        <button class="btn btn-success rounded-pill add-to-cart-btn flex-grow-1">Add to Cart</button>
+                        <button class="btn btn-outline-danger wishlist-btn" data-name="Sandalwood" data-price="720" data-img="https://5.imimg.com/data5/SELLER/Default/2023/8/339167761/IN/FT/UZ/139153589/white-sandalwood-plant-1000x1000.jpeg"><i class="fa-regular fa-heart"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 col-sm-6 mb-4">
+            <div class="card h-100 shadow-sm custom-plant-card">
+                <img src="https://m.media-amazon.com/images/I/81+GZeAKYzL.jpg" class="card-img-top plant-img" alt="Sita Ashok">
+                <div class="card-body text-center">
+                    <h5 class="card-title fw-bold plant-title">Sita Ashok</h5>
+                    <p class="card-text plant-text">A sacred evergreen tree with fragrant flowers, highly valued in Indian culture.</p>
+                    <span class="fw-bold d-block mb-3 plant-price"><i class="fa-solid fa-indian-rupee-sign"></i> 750</span>
+                    <div class="d-flex gap-2 justify-content-center align-items-center">
+                        <button class="btn btn-success rounded-pill add-to-cart-btn flex-grow-1">Add to Cart</button>
+                        <button class="btn btn-outline-danger wishlist-btn" data-name="Sita Ashok" data-price="750" data-img="https://m.media-amazon.com/images/I/81+GZeAKYzL.jpg"><i class="fa-regular fa-heart"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 col-sm-6 mb-4">
+            <div class="card h-100 shadow-sm custom-plant-card">
+                <img src="https://th.bing.com/th/id/OIP.uCbQLP_SEwLsC6y5KzPmbAHaJ4?o=7rm=3&rs=1&pid=ImgDetMain&o=7&rm=3" class="card-img-top plant-img" alt="Himsagar Mango">
+                <div class="card-body text-center">
+                    <h5 class="card-title fw-bold plant-title">Himsagar Mango</h5>
+                    <p class="card-text plant-text">A premium Bengal variety, extremely sweet, fiberless, and creamy.</p>
+                    <span class="fw-bold d-block mb-3 plant-price"><i class="fa-solid fa-indian-rupee-sign"></i> 890</span>
+                    <div class="d-flex gap-2 justify-content-center align-items-center">
+                        <button class="btn btn-success rounded-pill add-to-cart-btn flex-grow-1" data-name="Himsagar Mango" data-price="890" data-img="https://th.bing.com/th/id/OIP.uCbQLP_SEwLsC6y5KzPmbAHaJ4?o=7rm=3&rs=1&pid=ImgDetMain&o=7&rm=3">Add to Cart</button>
+                        <button class="btn btn-outline-danger wishlist-btn"><i class="fa-regular fa-heart"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 col-sm-6 mb-4">
+            <div class="card h-100 shadow-sm custom-plant-card">
+                <img src="https://plantsvilla.com/product/chausa-mango-grafted-fruit-plant/Chausa-Mango-1.jpg" class="card-img-top plant-img" alt="Chausa Mango">
+                <div class="card-body text-center">
+                    <h5 class="card-title fw-bold plant-title">Chausa Mango</h5>
+                    <p class="card-text plant-text">Known for its unique honey-like sweetness and a soft, juicy texture.</p>
+                    <span class="fw-bold d-block mb-3 plant-price"><i class="fa-solid fa-indian-rupee-sign"></i> 750</span>
+                    <div class="d-flex gap-2 justify-content-center align-items-center">
+                        <button class="btn btn-success rounded-pill add-to-cart-btn flex-grow-1" data-name="Chausa Mango" data-price="750" data-img="https://plantsvilla.com/product/chausa-mango-grafted-fruit-plant/Chausa-Mango-1.jpg">Add to Cart</button>
+                        <button class="btn btn-outline-danger wishlist-btn"><i class="fa-regular fa-heart"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 col-sm-6 mb-4">
+            <div class="card h-100 shadow-sm custom-plant-card">
+                <img src="https://5.imimg.com/data5/SELLER/Default/2022/12/ZR/MX/OG/77590722/dasheri-mango-plant-nursery-1000x1000.png" class="card-img-top plant-img" alt="Dasheri Mango">
+                <div class="card-body text-center">
+                    <h5 class="card-title fw-bold plant-title">Dasheri Mango</h5>
+                    <p class="card-text plant-text">A famous North Indian variety, loved for its distinct aroma and sweet taste.</p>
+                    <span class="fw-bold d-block mb-3 plant-price"><i class="fa-solid fa-indian-rupee-sign"></i> 680</span>
+                    <div class="d-flex gap-2 justify-content-center align-items-center">
+                        <button class="btn btn-success rounded-pill add-to-cart-btn flex-grow-1" data-name="Dasheri Mango" data-price="680" data-img="https://5.imimg.com/data5/SELLER/Default/2022/12/ZR/MX/OG/77590722/dasheri-mango-plant-nursery-1000x1000.png">Add to Cart</button>
+                        <button class="btn btn-outline-danger wishlist-btn"><i class="fa-regular fa-heart"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 col-sm-6 mb-4">
+            <div class="card h-100 shadow-sm custom-plant-card">
+                <img src="https://havenplant.in/cdn/shop/files/e79fdd708c55748c06730bc1f6a031b8.webp?v=1724344007&width=1946" class="card-img-top plant-img" alt="Neelam Mango">
+                <div class="card-body text-center">
+                    <h5 class="card-title fw-bold plant-title">Neelam Mango</h5>
+                    <p class="card-text plant-text">A small-sized, round mango with a very pleasant fragrance and sweet pulp.</p>
+                    <span class="fw-bold d-block mb-3 plant-price"><i class="fa-solid fa-indian-rupee-sign"></i> 550</span>
+                    <div class="d-flex gap-2 justify-content-center align-items-center">
+                        <button class="btn btn-success rounded-pill add-to-cart-btn flex-grow-1" data-name="Neelam Mango" data-price="550" data-img="https://havenplant.in/cdn/shop/files/e79fdd708c55748c06730bc1f6a031b8.webp?v=1724344007&width=1946">Add to Cart</button>
+                        <button class="btn btn-outline-danger wishlist-btn"><i class="fa-regular fa-heart"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 col-sm-6 mb-4">
+            <div class="card h-100 shadow-sm custom-plant-card">
+                <img src="https://img2.exportersindia.com/product_images/bc-full/2019/6/4538795/mango-malda-grafted-plant-1559703174_p_2765580_941346.jpeg" class="card-img-top plant-img" alt="Malda Mango">
+                <div class="card-body text-center">
+                    <h5 class="card-title fw-bold plant-title">Malda Mango</h5>
+                    <p class="card-text plant-text">A delicious variety known for its sweet flavor and smooth, fiberless skin.</p>
+                    <span class="fw-bold d-block mb-3 plant-price"><i class="fa-solid fa-indian-rupee-sign"></i> 720</span>
+                    <div class="d-flex gap-2 justify-content-center align-items-center">
+                        <button class="btn btn-success rounded-pill add-to-cart-btn flex-grow-1" data-name="Malda Mango" data-price="720" data-img="https://img2.exportersindia.com/product_images/bc-full/2019/6/4538795/mango-malda-grafted-plant-1559703174_p_2765580_941346.jpeg">Add to Cart</button>
+                        <button class="btn btn-outline-danger wishlist-btn"><i class="fa-regular fa-heart"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 col-sm-6 mb-4">
+            <div class="card h-100 shadow-sm custom-plant-card">
+                <img src="https://5.imimg.com/data5/ANDROID/Default/2024/6/425141475/QT/KC/FD/135341417/product-jpeg-500x500.jpg" class="card-img-top plant-img" alt="Kesar Mango">
+                <div class="card-body text-center">
+                    <h5 class="card-title fw-bold plant-title">Kesar Mango</h5>
+                    <p class="card-text plant-text">Named for its saffron-like color and intense, sweet aroma. Truly premium!</p>
+                    <span class="fw-bold d-block mb-3 plant-price"><i class="fa-solid fa-indian-rupee-sign"></i> 950</span>
+                    <div class="d-flex gap-2 justify-content-center align-items-center">
+                        <button class="btn btn-success rounded-pill add-to-cart-btn flex-grow-1" data-name="Kesar Mango" data-price="950" data-img="https://5.imimg.com/data5/ANDROID/Default/2024/6/425141475/QT/KC/FD/135341417/product-jpeg-500x500.jpg">Add to Cart</button>
+                        <button class="btn btn-outline-danger wishlist-btn"><i class="fa-regular fa-heart"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 col-sm-6 mb-4">
+            <div class="card h-100 shadow-sm custom-plant-card">
+                <img src="https://5.imimg.com/data5/ANDROID/Default/2022/1/EV/UW/JA/83845129/product-jpeg-1000x1000.jpg" class="card-img-top plant-img" alt="Safeda Mango">
+                <div class="card-body text-center">
+                    <h5 class="card-title fw-bold plant-title">Safeda (Banganapalli) mango</h5>
+                    <p class="card-text plant-text">Large, golden-yellow mangoes known for their rich, sweet, and unique taste.</p>
+                    <span class="fw-bold d-block mb-3 plant-price"><i class="fa-solid fa-indian-rupee-sign"></i> 620</span>
+                    <div class="d-flex gap-2 justify-content-center align-items-center">
+                        <button class="btn btn-success rounded-pill add-to-cart-btn flex-grow-1" data-name="Safeda Mango" data-price="620" data-img="https://5.imimg.com/data5/ANDROID/Default/2022/1/EV/UW/JA/83845129/product-jpeg-1000x1000.jpg">Add to Cart</button>
+                        <button class="btn btn-outline-danger wishlist-btn"><i class="fa-regular fa-heart"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 51. Mahua Tree -->
+        <div class="col-md-4 col-sm-6 mb-4">
+            <div class="card h-100 shadow-sm custom-plant-card">
+                <img src="https://th.bing.com/th/id/R.aed74981f6a6a27cb68c1d624337c91b?rik=tbf3npng9YFsxw&riu=http%3a%2f%2fmanbhawannursery.in%2fcdn%2fshop%2ffiles%2fmahua-tb_cae31e1f-1f6b-4670-ad7e-10f0a85388eb.png%3fv%3d1684821067&ehk=BeF%2b%2fhiGwmAUkM1SbzBGJ4PMro4NKd5ZHMxmHUVrPEI%3d&risl=&pid=ImgRaw&r=0" class="card-img-top plant-img" alt="Mahua Tree">
+                <div class="card-body text-center">
+                    <h5 class="card-title fw-bold plant-title">Mahua Tree</h5>
+                    <p class="card-text plant-text">A staple tree for tribal communities, providing nutritious flowers and oil seeds.</p>
+                    <span class="fw-bold d-block mb-3 plant-price"><i class="fa-solid fa-indian-rupee-sign"></i> 440</span>
+                    <div class="d-flex gap-2 justify-content-center align-items-center">
+                        <button class="btn btn-success rounded-pill add-to-cart-btn flex-grow-1">Add to Cart</button>
+                        <button class="btn btn-outline-danger wishlist-btn" data-name="Mahua Tree" data-price="440" data-img="https://th.bing.com/th/id/R.aed74981f6a6a27cb68c1d624337c91b?rik=tbf3npng9YFsxw&riu=http%3a%2f%2fmanbhawannursery.in%2fcdn%2fshop%2ffiles%2fmahua-tb_cae31e1f-1f6b-4670-ad7e-10f0a85388eb.png%3fv%3d1684821067&ehk=BeF%2b%2fhiGwmAUkM1SbzBGJ4PMro4NKd5ZHMxmHUVrPEI%3d&risl=&pid=ImgRaw&r=0"><i class="fa-regular fa-heart"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 col-sm-6 mb-4">
+            <div class="card h-100 shadow-sm custom-plant-card">
+                <img src="https://www.shutterstock.com/image-photo/about-my-beautiful-green-mini-600w-1847720761.jpg" class="card-img-top plant-img" alt="Frangipani Tree">
+                <div class="card-body text-center">
+                    <h5 class="card-title fw-bold plant-title">Frangipani Tree</h5>
+                    <p class="card-text plant-text">Highly fragrant, iconic flowers that fill your garden with a sweet aroma.</p>
+                    <span class="fw-bold d-block mb-3 plant-price"><i class="fa-solid fa-indian-rupee-sign"></i> 450</span>
+                    <div class="d-flex gap-2 justify-content-center align-items-center">
+                        <button class="btn btn-success rounded-pill add-to-cart-btn flex-grow-1">Add to Cart</button>
+                        <button class="btn btn-outline-danger wishlist-btn" data-name="Frangipani Tree" data-price="450" data-img="https://www.shutterstock.com/image-photo/about-my-beautiful-green-mini-600w-1847720761.jpg"><i class="fa-regular fa-heart"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 43. Juniper Tree -->
+        <div class="col-md-4 col-sm-6 mb-4">
+            <div class="card h-100 shadow-sm custom-plant-card">
+                <img src="https://tse3.mm.bing.net/th/id/OIP.EZkjXbPenn7yW1My6-jgbQHaHa?w=640&h=640&rs=1&pid=ImgDetMain&o=7&rm=3" class="card-img-top plant-img" alt="Juniper Tree">
+                <div class="card-body text-center">
+                    <h5 class="card-title fw-bold plant-title">Juniper Tree</h5>
+                    <p class="card-text plant-text">Evergreen, hardy, and unique foliage that stands out in any landscape.</p>
+                    <span class="fw-bold d-block mb-3 plant-price"><i class="fa-solid fa-indian-rupee-sign"></i> 550</span>
+                    <div class="d-flex gap-2 justify-content-center align-items-center">
+                        <button class="btn btn-success rounded-pill add-to-cart-btn flex-grow-1">Add to Cart</button>
+                        <button class="btn btn-outline-danger wishlist-btn" data-name="Juniper Tree" data-price="550" data-img="https://tse3.mm.bing.net/th/id/OIP.EZkjXbPenn7yW1My6-jgbQHaHa?w=640&h=640&rs=1&pid=ImgDetMain&o=7&rm=3"><i class="fa-regular fa-heart"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 44. Dogwood Tree -->
+        <div class="col-md-4 col-sm-6 mb-4">
+            <div class="card h-100 shadow-sm custom-plant-card">
+                <img src="https://i.pinimg.com/736x/44/14/d2/4414d2a269e50bc5614ebe5f69a48cb1.jpg" class="card-img-top plant-img" alt="Dogwood Tree">
+                <div class="card-body text-center">
+                    <h5 class="card-title fw-bold plant-title">Dogwood Tree</h5>
+                    <p class="card-text plant-text">Beautiful flowering tree known for its distinct, colorful floral bracts.</p>
+                    <span class="fw-bold d-block mb-3 plant-price"><i class="fa-solid fa-indian-rupee-sign"></i> 880</span>
+                    <div class="d-flex gap-2 justify-content-center align-items-center">
+                        <button class="btn btn-success rounded-pill add-to-cart-btn flex-grow-1">Add to Cart</button>
+                        <button class="btn btn-outline-danger wishlist-btn" data-name="Dogwood Tree" data-price="880" data-img="https://i.pinimg.com/736x/44/14/d2/4414d2a269e50bc5614ebe5f69a48cb1.jpg"><i class="fa-regular fa-heart"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 45. Persimmon Tree -->
+        <div class="col-md-4 col-sm-6 mb-4">
+            <div class="card h-100 shadow-sm custom-plant-card">
+                <img src="https://tse2.mm.bing.net/th/id/OIP.NF_yEJraE4Pzdh-_cZB6DAAAAA?rs=1&pid=ImgDetMain&o=7&rm=3" class="card-img-top plant-img" alt="Persimmon Tree">
+                <div class="card-body text-center">
+                    <h5 class="card-title fw-bold plant-title">Persimmon Tree</h5>
+                    <p class="card-text plant-text">Produces sweet, autumn-harvest fruits and vibrant foliage.</p>
+                    <span class="fw-bold d-block mb-3 plant-price"><i class="fa-solid fa-indian-rupee-sign"></i> 590</span>
+                    <div class="d-flex gap-2 justify-content-center align-items-center">
+                        <button class="btn btn-success rounded-pill add-to-cart-btn flex-grow-1">Add to Cart</button>
+                        <button class="btn btn-outline-danger wishlist-btn" data-name="Persimmon Tree" data-price="590" data-img="ihttps://tse2.mm.bing.net/th/id/OIP.NF_yEJraE4Pzdh-_cZB6DAAAAA?rs=1&pid=ImgDetMain&o=7&rm=3"><i class="fa-regular fa-heart"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 🏡 OUTDOOR PLANTS SECTION END HERE -->
+
+
+<!-- 🛑 FOOTER -->
+    <footer class="bg-dark text-white text-center py-4 mt-5">
+        <p class="mb-0">&copy; 2026 Plant Oasis. All Rights Reserved. Developed by Own.</p>
+    </footer>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+    let cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+    const cartBadge = document.getElementById('cart-count');
+    if (cartBadge) {
+        cartBadge.innerText = cart.reduce((total, item) => total + item.quantity, 0);
+    }
+
+    const allButtons = document.querySelectorAll('.add-to-cart-btn');
+
+    allButtons.forEach(function(button) {
+        button.addEventListener('click', function(event) {
+            const card = event.target.closest('.custom-plant-card');
+            if (!card) return;
+
+            const title = card.querySelector('.card-title').innerText;
+            const priceText = card.querySelector('.plant-price').innerText;
+            const price = parseInt(priceText.replace(/[^\d]/g, '')); 
+            const img = card.querySelector('.plant-img').src;
+
+            const plant = {
+                title: title,
+                price: price,
+                img: img,
+                quantity: 1
+            };
+
+            const existingProductIndex = cart.findIndex(item => item.title === plant.title);
+            
+            if (existingProductIndex > -1) {
+                cart[existingProductIndex].quantity += 1;
+            } else {
+                cart.push(plant);
+            }
+
+            localStorage.setItem('cart', JSON.stringify(cart));
+
+            if (cartBadge) {
+                cartBadge.innerText = cart.reduce((total, item) => total + item.quantity, 0);
+            }
+
+            alert(title + " added successfully! 🎉");
+        });
+    });
+
+
+    // 1. Wishlist Badge ko update karne wala main function
+    function updateWishlistBadge() {
+        const wishlistBadge = document.getElementById('wishlist-badge');
+        const wishlist = JSON.parse(localStorage.getItem('plantWishlist')) || [];
+        
+        if (wishlistBadge) {
+            wishlistBadge.textContent = wishlist.length;
+            // Agar list khali hai toh badge hide kar do, warna dikhao
+            wishlistBadge.classList.toggle('d-none', wishlist.length === 0);
+        }
+    }
+
+    // 2. Wishlist UI (Heart icon active/inactive) ko set karne wala function
+    function updateWishlistUI() {
+        const wishlist = JSON.parse(localStorage.getItem('plantWishlist')) || [];
+        document.querySelectorAll('.wishlist-btn').forEach(btn => {
+            const plantName = btn.getAttribute('data-name');
+            const isWishlisted = wishlist.some(item => item.name === plantName);
+            
+            if (isWishlisted) {
+                btn.classList.add('active');
+                btn.innerHTML = '<i class="fa-solid fa-heart"></i>';
+            } else {
+                btn.classList.remove('active');
+                btn.innerHTML = '<i class="fa-regular fa-heart"></i>';
+            }
+        });
+    }
+
+    // 3. Page load hote hi sab set karo
+    document.addEventListener('DOMContentLoaded', function () {
+        updateWishlistBadge();
+        updateWishlistUI();
+
+        // 4. Sabhi Wishlist buttons par click event lagao
+        document.querySelectorAll('.wishlist-btn').forEach(btn => {
+            btn.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                // Sabse pehle tazza (latest) data uthao
+                let wishlist = JSON.parse(localStorage.getItem('plantWishlist')) || [];
+                const name = this.getAttribute('data-name');
+                const price = this.getAttribute('data-price');
+                const img = this.getAttribute('data-img');
+
+                const index = wishlist.findIndex(item => item.name === name);
+
+                if (index === -1) {
+                    // Add to wishlist
+                    wishlist.push({ name, price, img });
+                } else {
+                    // Remove from wishlist
+                    wishlist.splice(index, 1);
+                }
+
+                // Storage mein save karo
+                localStorage.setItem('plantWishlist', JSON.stringify(wishlist));
+
+                // UI aur Badge dono ko update karo
+                updateWishlistUI();
+                updateWishlistBadge();
+            });
+        });
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plant Oasis Home Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+     <script src="https://kit.fontawesome.com/7d5b9c692b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="plants.css">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark   shadow-sm fixed-top" >
+    <div class="container">
+        <a class="navbar-brand fw-bold" href="#">🌱 Plant Oasis</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto fw-semibold ">
+                <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#categoriesSection">Our Plants</a></li>
+                <li class="nav-item"><a class="nav-link" href="#featureSection">Care Tips</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contactSection">Contact</a></li>
+                <li class="nav-item ms-lg-3 mt-2 mt-lg-0">
+                    <a href="Wishlist.html" class="nav-link position-relative d-inline-block p-0" title="Wishlist" style="line-height: 1;">  
+                        <div class="wishlist-nav-icon">
+                            <i class="fa-solid fa-heart"></i>
+                        </div>
+                        <span id="wishlist-badge" class="position-absolute badge rounded-pill bg-danger fw-bold d-none" 
+                            style="font-size: 0.65rem; padding: 0.25em 0.45em; top: -5px; right: -5px; z-index: 5; border: 1px solid white; box-shadow: 0 2px 5px rgba(0,0,0,0.2);">
+                            0
+                        </span>
+                    </a>
+                </li> 
+                <!-- 🛒 SHOPPING CART ICON (Home page ke navbar me links ke baad jodna hai) -->
+                <li class="nav-item ms-lg-3 mt-2 mt-lg-0">  
+                    <a href="Cart.html" class="text-white position-relative fs-5" id="cart-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                        <!-- 🔴 Cart Counter Badge -->
+                        <span id="cart-count" class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger" style="font-size: 0.6rem;">
+                        0
+                        </span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+<div class="bg-light py-5" id="sectionHome">
+    <div class="container py-2 py-md-4">
+        <div class="row align-items-center g-4 g-md-0">
+            
+            <div class="col-12 col-md-6 text-content text-center text-md-start order-2 order-md-1">
+                <span class="sub-title d-block mb-2 text-uppercase fw-semibold text-success">Welcome to Nature</span>
+                <h1 class="main-heading fw-bold display-5 mb-3">Bring Nature Inside <br class="d-none d-md-block">Your Living Room</h1>
+                <p class="hero-desc fs-6 text-muted mb-4">
+                    Premium quality plants, delivered straight to your home, Refresh and transform your living space with our exclusive collection
+                </p>
+                <a href="#foweringCarousel" class="btn btn-custom-green shadow rounded-pill px-4 py-2">Shop Best Plants</a>
+            </div>
+            
+            <div class="col-12 col-md-6 text-center order-1 order-md-2 mb-4 mb-md-0">
+                <img src="https://thumbs.dreamstime.com/b/green-oasis-lush-indoor-plants-filling-modern-living-space-cozy-area-turned-verdant-variety-potted-houseplants-332361575.jpg" 
+                class="img-fluid hero-img" alt="Beautiful Indoor Plant">
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="sticky-top bg-white py-3 shadow-sm" style="top: 56px; z-index: 1020;">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-6 col-10 position-relative">
+                <div class="input-group input-group-sm search-wrapper">
+                    <input type="text" id="plant-search" class="form-control" placeholder="Search your favorite plants..." 
+                    style="border-radius: 20px 0 0 20px !important; border: 2px solid #1e4620;">
+                    <button class="btn btn-success" type="button" id="search-btn" style="border-radius: 0 20px 20px 0 !important; 
+                    background-color: #1e4620; border: 2px solid #1e4620;">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </div>
+                <div id="search-results" class="list-group position-absolute w-100 shadow-lg d-none" 
+                style="z-index: 1050; margin-top: 5px; max-height: 200px; overflow-y: auto; right: 0; left: 0; padding: 0 12px;"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="plantOasisCarousel" class="carousel slide carousel-fade shadow-lg my-4" data-bs-ride="carousel" data-bs-touch="true">
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#plantOasisCarousel" data-bs-slide-to="0" class="active" aria-current="true"></button>
+        <button type="button" data-bs-target="#plantOasisCarousel" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#plantOasisCarousel" data-bs-slide-to="2"></button>
+    </div>
+
+    <div id="foweringCarousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="4000">
+                <img src="https://wallpapercave.com/wp/wp7851936.jpg" class="d-block w-100 carousel-img" alt="Indoor Plants">
+                <div class="carousel-caption">
+                    <h2 class="fw-bold text-warning">Transform Your Living Room</h2>
+                    <p class="carousel-text">Bring nature indoors and brighten up your home with our exclusive collection of premium plants.</p>
+                    <a href="IndoorPlants.html" class="btn btn-success btn-carousel fw-bold">Shop Indoor</a>
+                </div>
+            </div>
+
+            <div class="carousel-item" data-bs-interval="4000">
+                <img src="https://koala.sh/api/image/v2-c39wo-ibckw.jpg?width=1216&height=832&dream" class="d-block w-100 carousel-img" alt="Garden Plants">
+                <div class="carousel-caption">
+                    <h2 class="fw-bold text-warning">Beautiful Garden Collection</h2>
+                    <p class="carousel-text">Bring the ultimate green vibes to your balcony and backyard with sturdy outdoor plants.</p>
+                    <a href="OutDoorPlant.html" class="btn btn-success btn-carousel fw-bold">Explore Outdoor</a>
+                </div>
+            </div>
+
+            <div class="carousel-item" data-bs-interval="4000">
+                <img src="https://wallpaperswide.com/download/spring_trees_in_bloom-wallpaper-2880x1620.jpg" class="d-block w-100 carousel-img" alt="Flowering Plants">
+                <div class="carousel-caption">
+                    <h2 class="fw-bold text-warning">Blossom with Colors</h2>
+                    <p class="carousel-text">Bright and vibrant flowering plants that add natural color and sweet fragrance to your home.</p>
+                    <a href="FloweringPlants.html" class="btn btn-success btn-carousel fw-bold">View Blossoms</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <button class="carousel-control-prev d-none d-md-flex" type="button" data-bs-target="#plantOasisCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next d-none d-md-flex" type="button" data-bs-target="#plantOasisCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+
+<div class="categories-section py-5 bg-white" id="categoriesSection">
+    <div class="container text-center mb-5">
+        <span class="sub-title d-block mb-2">Our Collection</span>
+        <h2 class="section-title fw-bold">Shop Plants by Categories</h2>
+        <p class="section-subtitle text-muted fs-6 mx-auto" style="max-width: 600px;">
+           Browse through our divers categrories and pick your favourite greenery today.
+        </p>
+    </div>
+</div>    
+    
+<div class="container">
+    <div class="row ">
+        <div class="col-12 col-md-4 mb-4">
+            <div class="plant-card h-100 shadow-sm">
+                <div class="img-wrapper">
+                    <img src="https://images.pexels.com/photos/19713277/pexels-photo-19713277.jpeg" 
+                    class="card-img-top" alt="Indoor Plants">
+                </div>
+                <div class="card-body text-center p-4">
+                    <h5 class="card-title fw-bold mb-2">Indoor Plants</h5>
+                    <p class="card-text text-muted fs-6">
+                        Purify your indoor air and add a touch of elegance to your space.
+                    </p>
+                    <a href="IndoorPlants.html" class="btn btn-explore rounded-pill px-4 mt-2">Explore More</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-4 mb-4">
+            <div class="plant-card h-100 shadow-sm">
+                <div class="img-wrapper">
+                    <img src="https://images.pexels.com/photos/37347924/pexels-photo-37347924.jpeg" 
+                    class="card-img-top" alt="Outdoor Plants">
+                </div>
+                <div class="card-body text-center p-4">
+                    <h5 class="card-title fw-bold mb-2">Outdoor Plants</h5>
+                    <p class="card-text text-muted fs-6">
+                        Hardy, sun-loving plants perfectly suited to brighten up your balcony and garden
+                    </p>
+                    <a href="OutDoorPlant.html" class="btn btn-explore rounded-pill px-4 mt-2">Explore More</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-4 mb-4">
+            <div class="plant-card h-100 shadow-sm">
+                <div class="img-wrapper">
+                    <img src="https://plus.unsplash.com/premium_photo-1666323007478-582a52b29b39?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+                    class="card-img-top" alt="Flowering Plants">
+                </div>
+                <div class="card-body text-center p-4">
+                    <h5 class="card-title fw-bold mb-2">Flowering Plants</h5>
+                    <p class="card-text text-muted fs-6">
+                        Bring home <b>vibrant blooms</b> and a <b>refreshing fragrance</b> with our colorful collection
+                    </p>
+                    <a href="FloweringPlants.html" class="btn btn-explore rounded-pill px-4 mt-2">Explore More</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-4 mb-4">
+            <div class="plant-card h-100 shadow-sm">
+                <div class="img-wrapper">
+                    <img src="https://cdn.wallpapersafari.com/32/17/MbYS8Z.jpg" 
+                    class="card-img-top" alt="Big Trees">
+                </div>
+                <div class="card-body text-center p-4">
+                    <h5 class="card-title fw-bold mb-2">Big Trees</h5>
+                    <p class="card-text text-muted fs-6">
+                        Long-lasting, shade-giving trees to add grandeur and natural beauty to your garden
+                    </p>
+                    <a href="Tree.html" class="btn btn-explore rounded-pill px-4 mt-2">Explore More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="feature-section py-5" id="featureSection">
+    <div class="container py-3">
+        <div class="features-header text-center mb-5">
+            <span class="features-sub text-uppercase">
+                Why Choose Us
+            </span>
+            <h2 class="features-title fw-bold mt-2">We Take Care of Your Plants</h2>
+            <p class="features-desc text-muted mx-auto mt-2">
+                Our expert team ensures that only the healthiest, premium-quality plants reaches your doorsteps.
+            </p>
+        </div>
+        <div class="row g-4">
+            <div class="col-12 col-md-4">
+                <div class="feature-box p-4 h-100">
+                    <div class="feature-icon mb-3">🚚</div>
+                    <h4 class="feature-box-title fw-bold mb-2">Fast & Safe Delivery</h4>
+                    <p class="feature-box-desc text-muted mb-0">
+                        We pack your plants with utmost care and ensure they reach your doorstep within 24-48 hours. 
+                    </p>
+                </div>
+            </div>
+            <div class="col-12 col-md-4">
+                <div class="feature-box p-4 h-100">
+                    <div class="feature-icon mb-3">🌿</div>
+                    <h4 class="feature-box-title fw-bold mb-2">100% Organic & Fresh</h4>
+                    <p class="feature-box-desc text-muted mb-0">
+                        We use no harful chemicals. Our plants are grown in natural soil with organic fertilizers.
+                    </p>
+                </div>
+            </div>
+            <div class="col-12 col-md-4">
+                <div class="feature-box p-4 h-100">
+                    <div class="feature-icon mb-3">☀️</div>
+                    <h4 class="feature-box-title fw-bold mb-2">Solar Plant Care</h4>
+                    <p class="feature-box-desc text-muted mb-0">
+                        Using advanced greenhouse systems and solar optimization to ensure your plants get the perfect balance of sunlight and moisture.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="follow-section py-5 text-center clearfix" id="contactSection">
+    <div class="container py-2">
+        <div class="mb-4">
+            <h3 class="follow-title fw-bold">Connect With Us</h3>
+            <hr class="follow-line mx-auto">
+            <p class="follow-desc text-muted mx-auto mb-0 px-3">
+                Follow us on social media for the latest plant arivals, expert gardening tips, and exclusive updates
+            </p>
+        </div>
+        <div class="d-flex justify-content-center gap-4 flew-wrap mb-2">
+            <a href="#" class="social-card text-decoration-none">
+                <div class="social-icon insta-icon">
+                    <i class="fa-brands fa-instagram"></i>
+                </div>
+                <span class="social-name">Instagram</span>
+            </a>
+
+            <a href="#" class="social-card text-decoration-none">
+                <div class="social-icon fb-icon">
+                    <i class="fa-brands fa-facebook"></i>
+                </div>
+                <span class="social-name">Facebook</span>
+            </a>
+
+            <a href="#" class="social-card text-decoration-none">
+                <div class="social-icon yt-icon">
+                    <i class="fa-brands fa-youtube"></i>
+                </div>
+                <span class="social-name">YouTube</span>
+            </a>
+
+            <a href="#" class="social-card text-decoration-none">
+                <div class="social-icon wa-icon">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </div>
+                <span class="social-name">WhatsApp</span>
+            </a>
+            
+        </div>
+    </div>
+</div>>
+
+</div>
+
+<footer class="footer-section py-5" >
+    <div class="container py-2">
+        <div class="row g-4">
+            <div class="col-12 col-md-4">
+                <h4 class="footer-brand fw-bold mb-3">🌿Plant Oasis</h4>
+                <p class="footer-text mb-0">
+                    Your ultimate destination for finding the perfect, healthy plants to brighten up your home and graden.
+                </p>
+            </div>
+            <div class="col-12 col-md-4">
+                <h5 class="footer-title fw-bold mb-3">Quick Links</h5>
+                <ul class="list-unstyled mb-0">
+                    <li class="mb-2"><a href="#sectionHome" class="footer-link text decoration-none">Home</a></li>
+                    <li class="mb-2"><a href="#categoriesSection" class="footer-link text decoration-none">Our Plants Collection</a></li>
+                    <li class="mb-2"><a href="#featureSection" class="footer-link text decoration-none">Care Tips</a></li>
+                </ul>
+            </div>
+            <div class="col-12 col-md-4">
+                <h5 class="footer-title fw-bold mb-3">Contact Us</h5>
+                <p class="footer-info mb-2">
+                    <i class="fa-solid fa-location-crosshairs"></i>
+                    Ballia, Uttar Pradesh, India</p>
+                <p class="footer-info mb-0">sooraj4499@gmail.com</p>
+            </div>
+        </div>
+        <hr class="my-4 footer-divider">
+        <div class="text-center footer-copy small">
+            <i class="fa-solid fa-copyright"></i>
+            2026 Plants Oasis. All Rights Reserved. Developed by own.
+        </div>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+    // 1. Cart Logic
+    function updateCartBadge() {
+        const cart = JSON.parse(localStorage.getItem('cart')) || [];
+        const cartBadge = document.getElementById('cart-count');
+        if (cartBadge) {
+            // Cart items ka total count calculate karein
+            const totalItems = cart.reduce((total, item) => total + (item.quantity || 1), 0);
+            cartBadge.innerText = totalItems;
+            
+            // Agar cart khali hai to badge hide karna chahein to ye use karein:
+            // cartBadge.style.display = totalItems === 0 ? 'none' : 'block';
+        }
+    }
+
+    // 2. Wishlist Badge Logic
+    function updateWishlistBadge() {
+        const wishlistBadge = document.getElementById('wishlist-badge');
+        const wishlist = JSON.parse(localStorage.getItem('plantWishlist')) || [];
+        
+        if (wishlistBadge) {
+            wishlistBadge.textContent = wishlist.length;
+            wishlistBadge.classList.toggle('d-none', wishlist.length === 0);
+        }
+    }
+
+    // 3. Wishlist UI (Heart icon active/inactive)
+    function updateWishlistUI() {
+        const wishlist = JSON.parse(localStorage.getItem('plantWishlist')) || [];
+        document.querySelectorAll('.wishlist-btn').forEach(btn => {
+            const plantName = btn.getAttribute('data-name');
+            const isWishlisted = wishlist.some(item => item.name === plantName);
+            
+            if (isWishlisted) {
+                btn.classList.add('active');
+                btn.innerHTML = '<i class="fa-solid fa-heart"></i>';
+            } else {
+                btn.classList.remove('active');
+                btn.innerHTML = '<i class="fa-regular fa-heart"></i>';
+            }
+        });
+    }
+
+    // 4. Page load hote hi sab kuch initialize karo
+    document.addEventListener('DOMContentLoaded', function () {
+        // Cart aur Wishlist dono ko update karein
+        updateCartBadge();
+        updateWishlistBadge();
+        updateWishlistUI();
+
+        // Wishlist buttons par click event
+        document.querySelectorAll('.wishlist-btn').forEach(btn => {
+            btn.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                let wishlist = JSON.parse(localStorage.getItem('plantWishlist')) || [];
+                const name = this.getAttribute('data-name');
+                const price = this.getAttribute('data-price');
+                const img = this.getAttribute('data-img');
+
+                const index = wishlist.findIndex(item => item.name === name);
+
+                if (index === -1) {
+                    wishlist.push({ name, price, img });
+                } else {
+                    wishlist.splice(index, 1);
+                }
+
+                localStorage.setItem('plantWishlist', JSON.stringify(wishlist));
+                updateWishlistUI();
+                updateWishlistBadge();
+            });
+        });
+    });
+
+    // Bonus: Jab user tab par wapas aaye to count refresh ho jaye
+    window.addEventListener('focus', function() {
+        updateCartBadge();
+        updateWishlistBadge();
+    });
+
+
+    // Ye code page load hote hi saare cards ko dhoondhega aur unka database bana dega
+    let globalPlants = [];
+
+    function collectData() {
+        const pages = ["IndoorPlants.html", "OutDoorPlant.html", "FloweringPlants.html", "Tree.html"];
+        
+        pages.forEach(page => {
+            fetch(page)
+                .then(response => response.text())
+                .then(html => {
+                    const parser = new DOMParser();
+                    const doc = parser.parseFromString(html, 'text/html');
+                    const titles = doc.querySelectorAll('.plant-title'); // Tumhare h5 ki class
+                    titles.forEach(t => {
+                        globalPlants.push({ name: t.innerText.trim(), link: page });
+                    });
+                });
+        });
+    }
+
+    collectData(); // Data collect ho gaya!
+
+    // Search Logic
+    document.getElementById('plant-search').addEventListener('input', function() {
+        const query = this.value.toLowerCase().trim();
+        const results = document.getElementById('search-results');
+        results.innerHTML = '';
+
+        if (query.length > 0) {
+            const matches = globalPlants.filter(p => p.name.toLowerCase().includes(query));
+            if(matches.length > 0) {
+                results.classList.remove('d-none');
+                matches.forEach(m => {
+                    results.innerHTML += `<a href="${m.link}" class="list-group-item list-group-item-action">${m.name}</a>`;
+                });
+            } else {
+                results.classList.add('d-none');
+            }
+        } else {
+            results.classList.add('d-none');
+        }
+    });
+
+</script>
+
+
+
+</body>
+</html>

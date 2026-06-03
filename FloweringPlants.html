@@ -1,0 +1,786 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flowering Plants</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/7d5b9c692b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="plants.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">🌿 Plant Oasis</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto fw-semibold align-items-center">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="IndoorPlants.html">Indoor</a></li>
+                    <li class="nav-item"><a class="nav-link" href="OutDoorPlant.html">Outdoor</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="FloweringPlants.html">Flowering</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Tree.html">Trees</a></li>
+                    <li class="nav-item ms-lg-3 mt-2 mt-lg-0">
+                        <a href="Wishlist.html" class="nav-link position-relative d-inline-block p-0" title="Wishlist" style="line-height: 1;">  
+                            <div class="wishlist-nav-icon">
+                                <i class="fa-solid fa-heart"></i>
+                            </div>
+                            <span id="wishlist-badge" class="position-absolute badge rounded-pill bg-danger fw-bold d-none" 
+                                style="font-size: 0.65rem; padding: 0.25em 0.45em; top: -5px; right: -5px; z-index: 5; border: 1px solid white; box-shadow: 0 2px 5px rgba(0,0,0,0.2);">
+                                0
+                            </span>
+                        </a>
+                    </li>
+                    <!-- 🛒 SHOPPING CART ICON (Yeh navbar ke andar jod diya) -->
+                    <li class="nav-item ms-lg-3 mt-2 mt-lg-0">
+                        <a href="Cart.html" class="text-white position-relative fs-5" id="cart-icon">
+                            <i class="fas fa-shopping-cart"></i>
+                            <!-- 🔴 Cart Counter Badge -->
+                            <span id="cart-count" class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger" style="font-size: 0.6rem;">
+                                0
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container py-5">
+    <div class="text-center mb-5">
+        <h2 class="fw-bold text-success">Flowering Plants Collection</h2>
+        <p class="text-muted">Bring vibrant colors and delightful fragrances to your home with beautiful blooming plants.</p>
+    </div>
+
+    <div class="row g-4">
+
+        <div class="col-md-4 col-sm-6 mb-4">
+            <div class="card h-100 shadow-sm custom-plant-card">
+                <img src="https://m.media-amazon.com/images/I/51QL2hw3nNL.jpg" 
+                class="card-img-top plant-img" alt="Raat ki Rani">
+                <div class="card-body text-center">
+                    <h5 class="card-title fw-bold plant-title">Raat ki Rani</h5>
+                    <p class="card-text plant-text">An elegant green bush famous for its small tubular flowers that emit an incredibly sweet scent during the night.</p>
+                    <span class="fw-bold d-block mb-3 plant-price"><i class="fa-solid fa-indian-rupee-sign"></i> 139</span>
+                    <div class="d-flex gap-2 justify-content-center align-items-center">
+                        <button class="btn btn-success rounded-pill add-to-cart-btn flex-grow-1">Add to Cart</button>
+                        <button class="btn btn-outline-danger wishlist-btn" data-name="Raat ki Rani" data-price="139" data-img="https://m.media-amazon.com/images/I/51QL2hw3nNL.jpg">
+                            <i class="fa-regular fa-heart"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 col-sm-6 mb-4">
+            <div class="card h-100 shadow-sm custom-plant-card">
+                <img src="https://m.media-amazon.com/images/I/61iywBmv39L._SL1300_.jpg" 
+                class="card-img-top plant-img" alt="Rose">
+                <div class="card-body text-center">
+                    <h5 class="card-title fw-bold plant-title">Rose (Gulaab)</h5>
+                    <p class="card-text plant-text">Known as the king of flowers, these classic red blooms add timeless beauty and a romantic fragrance to your garden.</p>
+                    <span class="fw-bold d-block mb-3 plant-price"><i class="fa-solid fa-indian-rupee-sign"></i> 159</span>
+                    <div class="d-flex gap-2 justify-content-center align-items-center">
+                        <button class="btn btn-success rounded-pill add-to-cart-btn flex-grow-1">Add to Cart</button>
+                        <button class="btn btn-outline-danger wishlist-btn" data-name="Rose (Gulaab)" data-price="159" data-img="https://m.media-amazon.com/images/I/61iywBmv39L._SL1300_.jpg">
+                             <i class="fa-regular fa-heart"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 col-sm-6 mb-4">
+            <div class="card h-100 shadow-sm custom-plant-card">
+                <img src="https://images.pexels.com/photos/13339812/pexels-photo-13339812.jpeg?cs=srgb&dl=pexels-md-robin-mia-300281570-13339812.jpg&fm=jpg" 
+                class="card-img-top plant-img" alt="Hibiscus">
+                <div class="card-body text-center">
+                    <h5 class="card-title fw-bold plant-title">Red Hibiscus (Gudhal)</h5>
+                    <p class="card-text plant-text">Red Hibiscus plants feature iconic, fiery crimson blossoms that add dramatic flair and classic beauty to outdoor landscapes.</p>
+                    <span class="fw-bold d-block mb-3 plant-price"><i class="fa-solid fa-indian-rupee-sign"></i> 119</span>
+                    <div class="d-flex gap-2 justify-content-center align-items-center">
+                        <button class="btn btn-success rounded-pill add-to-cart-btn flex-grow-1">Add to Cart</button>
+                        <button class="btn btn-outline-danger wishlist-btn" data-name="Red Hibiscus (Gudhal)" data-price="119" data-img="https://images.pexels.com/photos/13339812/pexels-photo-13339812.jpeg?cs=srgb&dl=pexels-md-robin-mia-300281570-13339812.jpg&fm=jpg">
+                            <i class="fa-regular fa-heart"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 col-sm-6 mb-4">
+            <div class="card h-100 shadow-sm custom-plant-card">
+                <img src="https://r2.community.samsung.com/t5/image/serverpage/image-id/2345518i079F89794EEE2C0D?v=v2" 
+                class="card-img-top plant-img" alt="Hibiscus">
+                <div class="card-body text-center">
+                    <h5 class="card-title fw-bold plant-title">Yellow Hibiscus (Gudhal)</h5>
+                    <p class="card-text plant-text">Yellow Hibiscus plants produce sunny, cheerful golden blooms that instantly bring an inviting tropical warmth to any garden.</p>
+                    <span class="fw-bold d-block mb-3 plant-price"><i class="fa-solid fa-indian-rupee-sign"></i> 129</span>
+                    <div class="d-flex gap-2 justify-content-center align-items-center">
+                        <button class="btn btn-success rounded-pill add-to-cart-btn flex-grow-1">Add to Cart</button>
+                        <button class="btn btn-outline-danger wishlist-btn" data-name="Yellow Hibiscus (Gudhal)" data-price="129" data-img="https://m.media-amazon.com/images/I/61iywBmv39L._SL1300_.jpg">
+                            <i class="fa-regular fa-heart"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 col-sm-6 mb-4">
+            <div class="card h-100 shadow-sm custom-plant-card">
+                <img src="https://tse3.mm.bing.net/th/id/OIP.RM_22S1Rd_orLgVsEEIkTAHaJ4?w=960&h=1280&rs=1&pid=ImgDetMain&o=7&rm=3" 
+                class="card-img-top plant-img" alt="Hibiscus">
+                <div class="card-body text-center">
+                    <h5 class="card-title fw-bold plant-title">Pink Hibiscus (Gudhal)</h5>
+                    <p class="card-text plant-text">Yellow Hibiscus plants produce sunny, cheerful golden blooms that instantly bring an inviting tropical warmth to any garden.</p>
+                    <span class="fw-bold d-block mb-3 plant-price"><i class="fa-solid fa-indian-rupee-sign"></i> 129</span>
+                    <div class="d-flex gap-2 justify-content-center align-items-center">
+                    <button class="btn btn-success rounded-pill add-to-cart-btn flex-grow-1">Add to Cart</button>
+                    <button class="btn btn-outline-danger wishlist-btn" data-name="Pink Hibiscus (Gudhal)" data-price="129" data-img="https://tse3.mm.bing.net/th/id/OIP.RM_22S1Rd_orLgVsEEIkTAHaJ4?w=960&h=1280&rs=1&pid=ImgDetMain&o=7&rm=3">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 col-sm-6 mb-4">
+            <div class="card h-100 shadow-sm custom-plant-card">
+                <img src="https://i.pinimg.com/736x/4c/41/d5/4c41d528c02bb328b92af82759223050.jpg" 
+                class="card-img-top plant-img" alt="Mogra">
+                <div class="card-body text-center">
+                    <h5 class="card-title fw-bold plant-title">Mogra (Jasmine)</h5>
+                    <p class="card-text plant-text">Produces highly aromatic white flowers that are perfect for balconies and fill the evening air with a soothing scent.</p>
+                    <span class="fw-bold d-block mb-3 plant-price"><i class="fa-solid fa-indian-rupee-sign"></i> 129</span>
+                   <div class="d-flex gap-2 justify-content-center align-items-center">
+                        <button class="btn btn-success rounded-pill add-to-cart-btn flex-grow-1">Add to Cart</button>
+                        <button class="btn btn-outline-danger wishlist-btn" data-name="Mogra" data-price="129" data-img="https://i.pinimg.com/736x/4c/41/d5/4c41d528c02bb328b92af82759223050.jpg">
+                            <i class="fa-regular fa-heart"></i>
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 col-sm-6 mb-4">
+            <div class="card h-100 shadow-sm custom-plant-card">
+                <img src="https://i.etsystatic.com/26687866/r/il/7b5530/3174641197/il_600x600.3174641197_asu5.jpg" 
+                class="card-img-top plant-img" alt="Bougainvillea">
+                <div class="card-body text-center">
+                    <h5 class="card-title fw-bold plant-title">Bougainvillea (Pink)</h5>
+                    <p class="card-text plant-text">An extremely hardy, sun-loving climber that gets completely covered in vibrant, paper-like colorful bracts.</p>
+                    <span class="fw-bold d-block mb-3 plant-price"><i class="fa-solid fa-indian-rupee-sign"></i> 179</span>
+                    <div class="d-flex gap-2 justify-content-center align-items-center">
+                        <button class="btn btn-success rounded-pill add-to-cart-btn flex-grow-1">Add to Cart</button>
+                        <button class="btn btn-outline-danger wishlist-btn" data-name="Bougainvillea (Pink)" data-price="179" data-img="https://i.etsystatic.com/26687866/r/il/7b5530/3174641197/il_600x600.3174641197_asu5.jpg">
+                            <i class="fa-regular fa-heart"></i>
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 col-sm-6 mb-4">
+            <div class="card h-100 shadow-sm custom-plant-card">
+                <img src="https://shindebai.home.blog/wp-content/uploads/2019/04/bougainvillea-orange_uk_500_0020276.jpg" 
+                class="card-img-top plant-img" alt="Bougainvillea">
+                <div class="card-body text-center">
+                    <h5 class="card-title fw-bold plant-title">Bougainvillea (Yellow)</h5>
+                    <p class="card-text plant-text">An extremely hardy, sun-loving climber that gets completely covered in vibrant, paper-like colorful bracts.</p>
+                    <span class="fw-bold d-block mb-3 plant-price"><i class="fa-solid fa-indian-rupee-sign"></i> 179</span>
+                   <div class="d-flex gap-2 justify-content-center align-items-center">
+                        <button class="btn btn-success rounded-pill add-to-cart-btn flex-grow-1">Add to Cart</button>
+                        <button class="btn btn-outline-danger wishlist-btn" data-name="Bougainvillea (Yellow)" data-price="179" data-img="https://shindebai.home.blog/wp-content/uploads/2019/04/bougainvillea-orange_uk_500_0020276.jpg">
+                            <i class="fa-regular fa-heart"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 col-sm-6 mb-4">
+            <div class="card h-100 shadow-sm custom-plant-card">
+                <img src="https://tse1.explicit.bing.net/th/id/OIP.ePGW1QcUDIMA7EbgJt6WnQHaJQ?rs=1&pid=ImgDetMain&o=7&rm=3" 
+                class="card-img-top plant-img" alt="Bougainvillea">
+                <div class="card-body text-center">
+                    <h5 class="card-title fw-bold plant-title">Bougainvillea (Orange)</h5>
+                    <p class="card-text plant-text">An extremely hardy, sun-loving climber that gets completely covered in vibrant, paper-like colorful bracts.</p>
+                    <span class="fw-bold d-block mb-3 plant-price"><i class="fa-solid fa-indian-rupee-sign"></i> 179</span>
+                    <div class="d-flex gap-2 justify-content-center align-items-center">
+                        <button class="btn btn-success rounded-pill add-to-cart-btn flex-grow-1">Add to Cart</button>
+                        <button class="btn btn-outline-danger wishlist-btn" data-name="Bougainvillea (Orange)" data-price="179" data-img="https://tse1.explicit.bing.net/th/id/OIP.ePGW1QcUDIMA7EbgJt6WnQHaJQ?rs=1&pid=ImgDetMain&o=7&rm=3">
+                            <i class="fa-regular fa-heart"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 col-sm-6 mb-4">
+            <div class="card h-100 shadow-sm custom-plant-card">
+                <img src="https://tse1.mm.bing.net/th/id/OIP.ivRRAjtWlrsUpGfKhR3F3QHaHK?rs=1&pid=ImgDetMain&o=7&rm=3" 
+                class="card-img-top plant-img" alt="Bougainvillea">
+                <div class="card-body text-center">
+                    <h5 class="card-title fw-bold plant-title">Bougainvillea (White)</h5>
+                    <p class="card-text plant-text">An extremely hardy, sun-loving climber that gets completely covered in vibrant, paper-like colorful bracts.</p>
+                    <span class="fw-bold d-block mb-3 plant-price"><i class="fa-solid fa-indian-rupee-sign"></i> 179</span>
+                    <div class="d-flex gap-2 justify-content-center align-items-center">
+                        <button class="btn btn-success rounded-pill add-to-cart-btn flex-grow-1">Add to Cart</button>
+                        <button class="btn btn-outline-danger wishlist-btn" data-name="Bougainvillea (White)" data-price="179" data-img="https://tse1.mm.bing.net/th/id/OIP.ivRRAjtWlrsUpGfKhR3F3QHaHK?rs=1&pid=ImgDetMain&o=7&rm=3">
+                            <i class="fa-regular fa-heart"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 col-sm-6 mb-4">
+            <div class="card h-100 shadow-sm custom-plant-card">
+                <img src="https://www.thespruce.com/thmb/5n-Yc64K86Gmi8qjId7AzTfksug=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/growing-mexican-marigolds-tagetes-erecta-5101113-07-0aac4aeb742b4d209d34aa9da144df7a.JPG" 
+                class="card-img-top plant-img" alt="Marigold">
+                <div class="card-body text-center">
+                    <h5 class="card-title fw-bold plant-title">Marigold (Genda)</h5>
+                    <p class="card-text plant-text">Displays bright golden-orange flowers that repel pests naturally and are widely used for traditional festive decorations.</p>
+                    <span class="fw-bold d-block mb-3 plant-price"><i class="fa-solid fa-indian-rupee-sign"></i> 79</span>
+                    <div class="d-flex gap-2 justify-content-center align-items-center">
+                        <button class="btn btn-success rounded-pill add-to-cart-btn flex-grow-1">Add to Cart</button>
+                        <button class="btn btn-outline-danger wishlist-btn" data-name="Marigold (Genda)" data-price="79" data-img="https://www.thespruce.com/thmb/5n-Yc64K86Gmi8qjId7AzTfksug=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/growing-mexican-marigolds-tagetes-erecta-5101113-07-0aac4aeb742b4d209d34aa9da144df7a.JPG">
+                            <i class="fa-regular fa-heart"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 col-sm-6 mb-4">
+            <div class="card h-100 shadow-sm custom-plant-card">
+                <img src="https://thumbs.dreamstime.com/b/beautiful-image-madagascar-periwinkle-flowers-plant-taken-my-house-s-lawn-madagascar-periwinkle-evergreen-erect-258888096.jpg" 
+                class="card-img-top plant-img" alt="SadaBahar">
+                <div class="card-body text-center">
+                    <h5 class="card-title fw-bold plant-title">Sadabahar (Periwinkle)</h5>
+                    <p class="card-text plant-text">A super low-maintenance and tough plant that flowers non-stop through all types of weather seasons.</p>
+                    <span class="fw-bold d-block mb-3 plant-price"><i class="fa-solid fa-indian-rupee-sign"></i> 59</span>
+                    <div class="d-flex gap-2 justify-content-center align-items-center">
+                        <button class="btn btn-success rounded-pill add-to-cart-btn flex-grow-1">Add to Cart</button>
+                        <button class="btn btn-outline-danger wishlist-btn" data-name="Sadabahar (Periwinkle)" data-price="59" data-img="https://thumbs.dreamstime.com/b/beautiful-image-madagascar-periwinkle-flowers-plant-taken-my-house-s-lawn-madagascar-periwinkle-evergreen-erect-258888096.jpg">
+                            <i class="fa-regular fa-heart"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 col-sm-6 mb-4">
+            <div class="card h-100 shadow-sm custom-plant-card">
+                <img src="https://exoticseedemporium.com/cdn/shop/products/adesum_obesum.jpg?v=1582216215&width=533" 
+                class="card-img-top plant-img" alt="Adenium">
+                <div class="card-body text-center">
+                    <h5 class="card-title fw-bold plant-title">Adenium (Desert Rose)</h5>
+                    <p class="card-text plant-text">Features a unique bonsai-like thick stem structure paired with gorgeous, long-lasting pink and white shades.</p>
+                    <span class="fw-bold d-block mb-3 plant-price"><i class="fa-solid fa-indian-rupee-sign"></i> 499</span>
+                    <div class="d-flex gap-2 justify-content-center align-items-center">
+                        <button class="btn btn-success rounded-pill add-to-cart-btn flex-grow-1">Add to Cart</button>
+                        <button class="btn btn-outline-danger wishlist-btn" data-name="Adenium (Desert Rose)" data-price="499" data-img="https://exoticseedemporium.com/cdn/shop/products/adesum_obesum.jpg?v=1582216215&width=533">
+                            <i class="fa-regular fa-heart"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 col-sm-6 mb-4">
+            <div class="card h-100 shadow-sm custom-plant-card">
+                <img src="https://images.unsplash.com/photo-1717748903944-8232cdf47a65?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fHBsdW1lcmlhJTIwcGxhbnR8ZW58MHx8MHx8fDA%3D"
+                 class="card-img-top plant-img" alt="Champa">
+                <div class="card-body text-center">
+                    <h5 class="card-title fw-bold plant-title">Champa (Plumeria)</h5>
+                    <p class="card-text plant-text">Beautiful star-shaped white blossoms with a distinct yellow center and a heavenly, relaxing fragrance.</p>
+                    <span class="fw-bold d-block mb-3 plant-price"><i class="fa-solid fa-indian-rupee-sign"></i> 349</span>
+                    <div class="d-flex gap-2 justify-content-center align-items-center">
+                        <button class="btn btn-success rounded-pill add-to-cart-btn flex-grow-1">Add to Cart</button>
+                        <button class="btn btn-outline-danger wishlist-btn" data-name="Champa (Plumeria)" data-price="349" data-img="https://images.unsplash.com/photo-1717748903944-8232cdf47a65?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fHBsdW1lcmlhJTIwcGxhbnR8ZW58MHx8MHx8fDA%3D">
+                            <i class="fa-regular fa-heart"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 col-sm-6 mb-4">
+            <div class="card h-100 shadow-sm custom-plant-card">
+                <img src="https://www.datocms-assets.com/47611/1629166287-cascabelathevetia1.jpg?auto=format&fit=max&w=1000" 
+                class="card-img-top plant-img" alt="Kaner">
+                <div class="card-body text-center">
+                    <h5 class="card-title fw-bold plant-title"> Yellow Kaner (Oleander)</h5>
+                    <p class="card-text plant-text">Yellow Oleander features beautiful, bell-shaped golden blossoms that thrive effortlessly in bright, sun-drenched gardens.</p>
+                    <span class="fw-bold d-block mb-3 plant-price"><i class="fa-solid fa-indian-rupee-sign"></i> 119</span>
+                    <div class="d-flex gap-2 justify-content-center align-items-center">
+                        <button class="btn btn-success rounded-pill add-to-cart-btn flex-grow-1">Add to Cart</button>
+                        <button class="btn btn-outline-danger wishlist-btn" data-name="Yellow Kaner (Oleander)" data-price="119" data-img="https://www.datocms-assets.com/47611/1629166287-cascabelathevetia1.jpg?auto=format&fit=max&w=1000">
+                            <i class="fa-regular fa-heart"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 col-sm-6 mb-4">
+            <div class="card h-100 shadow-sm custom-plant-card">
+                <img src="https://s.ecrater.com/stores/50831/55a8e5a7c95f0_50831b.jpg" 
+                class="card-img-top plant-img" alt="Kaner">
+                <div class="card-body text-center">
+                    <h5 class="card-title fw-bold plant-title">Pink Kaner (Oleander)</h5>
+                    <p class="card-text plant-text">Pink Oleander produces stunning, abundant clusters of vibrant rose-colored flowers on hardy, drought-tolerant shrubs.</p>
+                    <span class="fw-bold d-block mb-3 plant-price"><i class="fa-solid fa-indian-rupee-sign"></i> 119</span>
+                   <div class="d-flex gap-2 justify-content-center align-items-center">
+                        <button class="btn btn-success rounded-pill add-to-cart-btn flex-grow-1">Add to Cart</button>
+                        <button class="btn btn-outline-danger wishlist-btn" data-name="Pink Kaner (Oleander)" data-price="119" data-img="https://s.ecrater.com/stores/50831/55a8e5a7c95f0_50831b.jpg">
+                            <i class="fa-regular fa-heart"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 col-sm-6 mb-4">
+            <div class="card h-100 shadow-sm custom-plant-card">
+                <img src="https://tse2.mm.bing.net/th/id/OIP.dqinYEe7eLOIl-EHZzXc5gHaJL?rs=1&pid=ImgDetMain&o=7&rm=3" 
+                class="card-img-top plant-img" alt="Yellow Tecoma">
+                <div class="card-body text-center">
+                    <h5 class="card-title fw-bold plant-title">Yellow Tecoma</h5>
+                    <p class="card-text plant-text">Pink Oleander produces stunning, abundant clusters of vibrant rose-colored flowers on hardy, drought-tolerant shrubs.</p>
+                    <span class="fw-bold d-block mb-3 plant-price"><i class="fa-solid fa-indian-rupee-sign"></i> 119</span>
+                   <div class="d-flex gap-2 justify-content-center align-items-center">
+                        <button class="btn btn-success rounded-pill add-to-cart-btn flex-grow-1">Add to Cart</button>
+                        <button class="btn btn-outline-danger wishlist-btn" data-name="Yellow Tecoma" data-price="119" data-img="https://tse2.mm.bing.net/th/id/OIP.dqinYEe7eLOIl-EHZzXc5gHaJL?rs=1&pid=ImgDetMain&o=7&rm=3">
+                            <i class="fa-regular fa-heart"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 col-sm-6 mb-4">
+            <div class="card h-100 shadow-sm custom-plant-card">
+                <img src="https://plantcaretoday.com/wp-content/uploads/sm-24829-august-beauty-gardenia-t1-768x768.jpg" 
+                class="card-img-top plant-img" alt="Gardenia">
+                <div class="card-body text-center">
+                    <h5 class="card-title fw-bold plant-title">Gardenia</h5>
+                    <p class="card-text plant-text">The Gardenia is a stunning evergreen shrub loved for its intoxicating fragrance and creamy-white, rose-like summer blooms.</p>
+                    <span class="fw-bold d-block mb-3 plant-price"><i class="fa-solid fa-indian-rupee-sign"></i> 119</span>
+                   <div class="d-flex gap-2 justify-content-center align-items-center">
+                        <button class="btn btn-success rounded-pill add-to-cart-btn flex-grow-1">Add to Cart</button>
+                        <button class="btn btn-outline-danger wishlist-btn" data-name="Gardenia" data-price="119" data-img="https://plantcaretoday.com/wp-content/uploads/sm-24829-august-beauty-gardenia-t1-768x768.jpg">
+                            <i class="fa-regular fa-heart"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 11. Jasmine (Chameli) -->
+        <div class="col-md-4 col-sm-6 mb-4">
+            <div class="card h-100 shadow-sm custom-plant-card">
+                <img src="https://media.istockphoto.com/id/1383822119/photo/pollen-of-gardenia-blooming.jpg?s=170667a&w=0&k=20&c=hbPTGhz6dgnOOLJyL1rfpQZ5zlT3vPDcCVZcihuXAbE=" 
+                class="card-img-top plant-img" alt="Chameli">
+                <div class="card-body text-center">
+                    <h5 class="card-title fw-bold plant-title">Jasmine (Chameli)</h5>
+                    <p class="card-text plant-text">A beautiful, fast-growing climbing vine known for its elegant white petals and sweet, refreshing traditional fragrance.</p>
+                    <span class="fw-bold d-block mb-3 plant-price"><i class="fa-solid fa-indian-rupee-sign"></i> 135</span>
+                    <div class="d-flex gap-2 justify-content-center align-items-center">
+                        <button class="btn btn-success rounded-pill add-to-cart-btn flex-grow-1">Add to Cart</button>
+                        <button class="btn btn-outline-danger wishlist-btn" data-name="Jasmine (Chameli)" data-price="135" data-img="https://media.istockphoto.com/id/1383822119/photo/pollen-of-gardenia-blooming.jpg?s=170667a&w=0&k=20&c=hbPTGhz6dgnOOLJyL1rfpQZ5zlT3vPDcCVZcihuXAbE=">
+                            <i class="fa-regular fa-heart"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 12. Sunflower (Surajmukhi) -->
+        <div class="col-md-4 col-sm-6 mb-4">
+            <div class="card h-100 shadow-sm custom-plant-card">
+                <img src="https://tse1.mm.bing.net/th/id/OIP.e-9xOlYbfPPskzCP735sfwHaLH?w=1920&h=2880&rs=1&pid=ImgDetMain&o=7&rm=3" 
+                class="card-img-top plant-img" alt="Sunflower">
+                <div class="card-body text-center">
+                    <h5 class="card-title fw-bold plant-title">Sunflower</h5>
+                    <p class="card-text plant-text">Bright, cheerful yellow flowers that face the sun, perfect for adding high energy and a vibrant summer look to your garden.</p>
+                    <span class="fw-bold d-block mb-3 plant-price"><i class="fa-solid fa-indian-rupee-sign"></i> 99</span>
+                    <div class="d-flex gap-2 justify-content-center align-items-center">
+                        <button class="btn btn-success rounded-pill add-to-cart-btn flex-grow-1">Add to Cart</button>
+                        <button class="btn btn-outline-danger wishlist-btn" data-name="Sunflower" data-price="99" data-img="https://tse1.mm.bing.net/th/id/OIP.e-9xOlYbfPPskzCP735sfwHaLH?w=1920&h=2880&rs=1&pid=ImgDetMain&o=7&rm=3">
+                            <i class="fa-regular fa-heart"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 13. Chrysanthemum (Guldaudi) -->
+        <div class="col-md-4 col-sm-6 mb-4">
+            <div class="card h-100 shadow-sm custom-plant-card">
+                <img src="https://www.urvann.com/s/6176774ef575bbd2b3331c8a/68d2869c4bfefbe61af2dc68/mun0324p-480x480.png" class="card-img-top plant-img" alt="Guldaudi">
+                <div class="card-body text-center">
+                    <h5 class="card-title fw-bold plant-title">Chrysanthemum</h5>
+                    <p class="card-text plant-text">Popular winter-blooming bushy plants that come in a huge variety of dense colors like yellow, purple, and pure white.</p>
+                    <span class="fw-bold d-block mb-3 plant-price"><i class="fa-solid fa-indian-rupee-sign"></i> 159</span>
+                    <div class="d-flex gap-2 justify-content-center align-items-center">
+                        <button class="btn btn-success rounded-pill add-to-cart-btn flex-grow-1">Add to Cart</button>
+                        <button class="btn btn-outline-danger wishlist-btn" data-name="Chrysanthemum" data-price="159" data-img="https://www.urvann.com/s/6176774ef575bbd2b3331c8a/68d2869c4bfefbe61af2dc68/mun0324p-480x480.png">
+                            <i class="fa-regular fa-heart"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 14. Vinca (Hybrid Sadabahar) -->
+        <div class="col-md-4 col-sm-6 mb-4">
+            <div class="card h-100 shadow-sm custom-plant-card">
+                <img src="https://tse2.mm.bing.net/th/id/OIP.3XIkELANuyvhQiqDNVCpQAHaHa?rs=1&pid=ImgDetMain&o=7&rm=3" class="card-img-top plant-img" alt="Vinca">
+                <div class="card-body text-center">
+                    <h5 class="card-title fw-bold plant-title">Hybrid Vinca</h5>
+                    <p class="card-text plant-text">A colorful upgrade to the regular sadabahar, offering rich shades of deep red, pink, and dark purple with glossy green leaves.</p>
+                    <span class="fw-bold d-block mb-3 plant-price"><i class="fa-solid fa-indian-rupee-sign"></i> 89</span>
+                    <div class="d-flex gap-2 justify-content-center align-items-center">
+                        <button class="btn btn-success rounded-pill add-to-cart-btn flex-grow-1">Add to Cart</button>
+                        <button class="btn btn-outline-danger wishlist-btn" data-name="Hybrid Vinca" data-price="89" data-img="https://tse2.mm.bing.net/th/id/OIP.3XIkELANuyvhQiqDNVCpQAHaHa?rs=1&pid=ImgDetMain&o=7&rm=3">
+                            <i class="fa-regular fa-heart"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 15. Lantana Camara -->
+        <div class="col-md-4 col-sm-6 mb-4">
+            <div class="card h-100 shadow-sm custom-plant-card">
+                <img src="https://cdn11.bigcommerce.com/s-jmzfi5zcr2/images/stencil/500x659/products/1328/6144/Luscious_Goldengate_Lantana_Flowering_in_Patio_Planter__47019.1610762186.jpg?c=2" 
+                class="card-img-top plant-img" alt="Lantana">
+                <div class="card-body text-center">
+                    <h5 class="card-title fw-bold plant-title">Lantana</h5>
+                    <p class="card-text plant-text">Extremely tough, sun-loving shrubs that feature beautiful multi-colored clusters of flowers, highly attractive to butterflies.</p>
+                    <span class="fw-bold d-block mb-3 plant-price"><i class="fa-solid fa-indian-rupee-sign"></i> 110</span>
+                    <div class="d-flex gap-2 justify-content-center align-items-center">
+                        <button class="btn btn-success rounded-pill add-to-cart-btn flex-grow-1">Add to Cart</button>
+                        <button class="btn btn-outline-danger wishlist-btn" data-name="Lantana" data-price="110" data-img="https://cdn11.bigcommerce.com/s-jmzfi5zcr2/images/stencil/500x659/products/1328/6144/Luscious_Goldengate_Lantana_Flowering_in_Patio_Planter__47019.1610762186.jpg?c=2">
+                            <i class="fa-regular fa-heart"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 16. Ixora (Rukmini) -->
+        <div class="col-md-4 col-sm-6 mb-4">
+            <div class="card h-100 shadow-sm custom-plant-card">
+                <img src="https://i.pinimg.com/originals/f6/43/5a/f6435af0052f95027073d6d7f55ae183.jpg" class="card-img-top plant-img" alt="Ixora">
+                <div class="card-body text-center">
+                    <h5 class="card-title fw-bold plant-title">Ixora (Rukmini)</h5>
+                    <p class="card-text plant-text">Beautiful compact evergreen shrub producing large, dense ball-shaped clusters of bright red and orange florets.</p>
+                    <span class="fw-bold d-block mb-3 plant-price"><i class="fa-solid fa-indian-rupee-sign"></i> 220</span>
+                    <div class="d-flex gap-2 justify-content-center align-items-center">
+                        <button class="btn btn-success rounded-pill add-to-cart-btn flex-grow-1">Add to Cart</button>
+                        <button class="btn btn-outline-danger wishlist-btn" data-name="Ixora (Rukmini)" data-price="220" data-img="https://i.pinimg.com/originals/f6/43/5a/f6435af0052f95027073d6d7f55ae183.jpg">
+                            <i class="fa-regular fa-heart"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+        <!-- 18. Dahlia -->
+        <div class="col-md-4 col-sm-6 mb-4">
+            <div class="card h-100 shadow-sm custom-plant-card">
+                <img src="https://backyardville.b-cdn.net/wp-content/uploads/2023/08/8f633bf8-7224-4f41-b862-db5b423ccc4f.png" class="card-img-top plant-img" alt="Dahlia">
+                <div class="card-body text-center">
+                    <h5 class="card-title fw-bold plant-title">Dahlia</h5>
+                    <p class="card-text plant-text">Features massive, multi-layered symmetrical blooms in striking colors, making them the absolute showstopper of any winter garden.</p>
+                    <span class="fw-bold d-block mb-3 plant-price"><i class="fa-solid fa-indian-rupee-sign"></i> 189</span>
+                   <div class="d-flex gap-2 justify-content-center align-items-center">
+                        <button class="btn btn-success rounded-pill add-to-cart-btn flex-grow-1">Add to Cart</button>
+                        <button class="btn btn-outline-danger wishlist-btn" data-name="Dahlia" data-price="189" data-img="https://backyardville.b-cdn.net/wp-content/uploads/2023/08/8f633bf8-7224-4f41-b862-db5b423ccc4f.png">
+                            <i class="fa-regular fa-heart"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 19. Bleeding Heart Vine -->
+        <div class="col-md-4 col-sm-6 mb-4">
+            <div class="card h-100 shadow-sm custom-plant-card">
+                <img src="https://th.bing.com/th/id/R.42eeb2a00f7b420d371555ed2dc63215?rik=ceXz8l4K1XIP4g&riu=http%3a%2f%2fwww.seedworldgarden.com%2fcdn%2fshop%2ffiles%2f495579064xx99xxPBBH_x68xBLEEDINGx68xHEARTx68xSeedsx68xAnx68xOldx68xFashionedx68xFavoritex68x_1200x1200.jpg%3fv%3d1712216781&ehk=fXG%2fbBsNa4a%2fpU%2bUnWCq3pNmqv8LhkRoJ078JAgkv80%3d&risl=&pid=ImgRaw&r=0" 
+                class="card-img-top plant-img" alt="Bleeding Heart">
+                <div class="card-body text-center">
+                    <h5 class="card-title fw-bold plant-title">Bleeding Heart</h5>
+                    <p class="card-text plant-text">A spectacular climbing vine that displays unique heart-shaped white flowers with a brilliant crimson-red petal popping out.</p>
+                    <span class="fw-bold d-block mb-3 plant-price"><i class="fa-solid fa-indian-rupee-sign"></i> 249</span>
+                    <div class="d-flex gap-2 justify-content-center align-items-center">
+                        <button class="btn btn-success rounded-pill add-to-cart-btn flex-grow-1">Add to Cart</button>
+                        <button class="btn btn-outline-danger wishlist-btn" data-name="Bleeding Heart" data-price="159" data-img="https://th.bing.com/th/id/R.42eeb2a00f7b420d371555ed2dc63215?rik=ceXz8l4K1XIP4g&riu=http%3a%2f%2fwww.seedworldgarden.com%2fcdn%2fshop%2ffiles%2f495579064xx99xxPBBH_x68xBLEEDINGx68xHEARTx68xSeedsx68xAnx68xOldx68xFashionedx68xFavoritex68x_1200x1200.jpg%3fv%3d1712216781&ehk=fXG%2fbBsNa4a%2fpU%2bUnWCq3pNmqv8LhkRoJ078JAgkv80%3d&risl=&pid=ImgRaw&r=0">
+                            <i class="fa-regular fa-heart"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 20. Peace Lily (Flowering Indoor/Outdoor) -->
+        <div class="col-md-4 col-sm-6 mb-4">
+            <div class="card h-100 shadow-sm custom-plant-card">
+                <img src="https://maisonlyinteriordesign.com/wp-content/uploads/2024/04/0_3_640_N-27-12.webp" class="card-img-top plant-img" alt="Peace Lily">
+                <div class="card-body text-center">
+                    <h5 class="card-title fw-bold plant-title">Peace Lily Supreme</h5>
+                    <p class="card-text plant-text">An elegant air-purifying plant that produces majestic, clean white hood-like flowers, perfect for shaded balconies or patios.</p>
+                    <span class="fw-bold d-block mb-3 plant-price"><i class="fa-solid fa-indian-rupee-sign"></i> 299</span>
+                    <div class="d-flex gap-2 justify-content-center align-items-center">
+                        <button class="btn btn-success rounded-pill add-to-cart-btn flex-grow-1">Add to Cart</button>
+                        <button class="btn btn-outline-danger wishlist-btn" data-name="Peace Lily Supreme" data-price="299" data-img="https://maisonlyinteriordesign.com/wp-content/uploads/2024/04/0_3_640_N-27-12.webp">
+                            <i class="fa-regular fa-heart"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 21. Petunia -->
+        <div class="col-md-4 col-sm-6 mb-4">
+            <div class="card h-100 shadow-sm custom-plant-card">
+                <img src="https://thumbs.dreamstime.com/b/pink-bell-shaped-flowers-trumpet-floes-249629167.jpg" class="card-img-top plant-img" alt="Petunia">
+                <div class="card-body text-center">
+                    <h5 class="card-title fw-bold plant-title">Vibrant Petunia</h5>
+                    <p class="card-text plant-text">Popular funnel-shaped flowers that create an explosion of dense color cascades, looking absolutely beautiful in hanging baskets.</p>
+                    <span class="fw-bold d-block mb-3 plant-price"><i class="fa-solid fa-indian-rupee-sign"></i> 85</span>
+                   <div class="d-flex gap-2 justify-content-center align-items-center">
+                        <button class="btn btn-success rounded-pill add-to-cart-btn flex-grow-1">Add to Cart</button>
+                        <button class="btn btn-outline-danger wishlist-btn" data-name="Vibrant Petunia" data-price="85" data-img="https://thumbs.dreamstime.com/b/pink-bell-shaped-flowers-trumpet-floes-249629167.jp">
+                            <i class="fa-regular fa-heart"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 22. Geranium -->
+        <div class="col-md-4 col-sm-6 mb-4">
+            <div class="card h-100 shadow-sm custom-plant-card">
+                <img src="https://th.bing.com/th/id/R.30f4f88d9561a5ee3dd3b9a0c40ef28b?rik=69P66YxpAams3g&riu=http%3a%2f%2fcdn.shopify.com%2fs%2ffiles%2f1%2f0620%2f2749%2f7724%2fproducts%2fgeranium-magnificum-shk-1_883a479f-584a-447e-9f2f-020408906350.jpg%3fv%3d1654603943&ehk=a92u%2fxkj%2fhg2eR96L1MDnfTw3hNfMAQVRTF0ogRc%2fu0%3d&risl=&pid=ImgRaw&r=0"
+                 class="card-img-top plant-img" alt="Geranium">
+                <div class="card-body text-center">
+                    <h5 class="card-title fw-bold plant-title">Geranium</h5>
+                    <p class="card-text plant-text">Hardy and tough sun-tolerant plants that bloom in thick, beautiful ball-like clusters of bright red, pink, and orange shades.</p>
+                    <span class="fw-bold d-block mb-3 plant-price"><i class="fa-solid fa-indian-rupee-sign"></i> 169</span>
+                    <div class="d-flex gap-2 justify-content-center align-items-center">
+                        <button class="btn btn-success rounded-pill add-to-cart-btn flex-grow-1">Add to Cart</button>
+                        <button class="btn btn-outline-danger wishlist-btn" data-name="Geranium" data-price="169" data-img="https://th.bing.com/th/id/R.30f4f88d9561a5ee3dd3b9a0c40ef28b?rik=69P66YxpAams3g&riu=http%3a%2f%2fcdn.shopify.com%2fs%2ffiles%2f1%2f0620%2f2749%2f7724%2fproducts%2fgeranium-magnificum-shk-1_883a479f-584a-447e-9f2f-020408906350.jpg%3fv%3d1654603943&ehk=a92u%2fxkj%2fhg2eR96L1MDnfTw3hNfMAQVRTF0ogRc%2fu0%3d&risl=&pid=ImgRaw&r=0">
+                            <i class="fa-regular fa-heart"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 23. Hydrangea -->
+        <div class="col-md-4 col-sm-6 mb-4">
+            <div class="card h-100 shadow-sm custom-plant-card">
+                <img src="https://tse4.mm.bing.net/th/id/OIP.ufPPzH_5kTDhgipbGZRN7wHaKT?rs=1&pid=ImgDetMain&o=7&rm=3" class="card-img-top plant-img" alt="Hydrangea">
+                <div class="card-body text-center">
+                    <h5 class="card-title fw-bold plant-title">Hydrangea Shrub</h5>
+                    <p class="card-text plant-text">Stunning, large globe-shaped flower heads that change colors based on soil pH, bringing a magical look to your garden paths.</p>
+                    <span class="fw-bold d-block mb-3 plant-price"><i class="fa-solid fa-indian-rupee-sign"></i> 420</span>
+                    <div class="d-flex gap-2 justify-content-center align-items-center">
+                        <button class="btn btn-success rounded-pill add-to-cart-btn flex-grow-1">Add to Cart</button>
+                        <button class="btn btn-outline-danger wishlist-btn" data-name="Hydrangea Shrub" data-price="420" data-img="https://tse4.mm.bing.net/th/id/OIP.ufPPzH_5kTDhgipbGZRN7wHaKT?rs=1&pid=ImgDetMain&o=7&rm=3">
+                            <i class="fa-regular fa-heart"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 24. Lavender -->
+        <div class="col-md-4 col-sm-6 mb-4">
+            <div class="card h-100 shadow-sm custom-plant-card">
+                <img src="https://tse4.mm.bing.net/th/id/OIP.PaNsViKsStmlb0avrm-uFAHaLH?w=950&h=1426&rs=1&pid=ImgDetMain&o=7&rm=3" class="card-img-top plant-img" alt="Lavender">
+                <div class="card-body text-center">
+                    <h5 class="card-title fw-bold plant-title">English Lavender</h5>
+                    <p class="card-text plant-text">Famous for its iconic purple spikes and deeply relaxing aromatherapeutic scent that naturally repels mosquitoes.</p>
+                    <span class="fw-bold d-block mb-3 plant-price"><i class="fa-solid fa-indian-rupee-sign"></i> 275</span>
+                    <div class="d-flex gap-2 justify-content-center align-items-center">
+                        <button class="btn btn-success rounded-pill add-to-cart-btn flex-grow-1">Add to Cart</button>
+                        <button class="btn btn-outline-danger wishlist-btn" data-name="English Lavender" data-price="279" data-img="https://tse4.mm.bing.net/th/id/OIP.PaNsViKsStmlb0avrm-uFAHaLH?w=950&h=1426&rs=1&pid=ImgDetMain&o=7&rm=3">
+                            <i class="fa-regular fa-heart"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 27. Madhumalti (Rangoon Creeper) -->
+        <div class="col-md-4 col-sm-6 mb-4">
+            <div class="card h-100 shadow-sm custom-plant-card">
+                <img src="https://th.bing.com/th/id/OIP.NWniaDqoKOohdkGyo79U4gHaHZ?o=7rm=3&rs=1&pid=ImgDetMain&o=7&rm=3" class="card-img-top plant-img" alt="Madhumalti">
+                <div class="card-body text-center">
+                    <h5 class="card-title fw-bold plant-title">Madhumalti (Rangoon Creeper)</h5>
+                    <p class="card-text plant-text">A classic Indian climbing vine that produces beautiful clusters of fragrant flowers that change color from white to pink and deep red.</p>
+                    <span class="fw-bold d-block mb-3 plant-price"><i class="fa-solid fa-indian-rupee-sign"></i> 149</span>
+                    <div class="d-flex gap-2 justify-content-center align-items-center">
+                        <button class="btn btn-success rounded-pill add-to-cart-btn flex-grow-1">Add to Cart</button>
+                        <button class="btn btn-outline-danger wishlist-btn" data-name="Madhumalti (Rangoon Creeper)" data-price="149" data-img="https://th.bing.com/th/id/OIP.NWniaDqoKOohdkGyo79U4gHaHZ?o=7rm=3&rs=1&pid=ImgDetMain&o=7&rm=3">
+                            <i class="fa-regular fa-heart"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 28. Aparajita (Butterfly Pea) -->
+        <div class="col-md-4 col-sm-6 mb-4">
+            <div class="card h-100 shadow-sm custom-plant-card">
+                <img src="https://m.media-amazon.com/images/I/41y-Z5gQuvL.jpg" class="card-img-top plant-img" alt="Aparajita">
+                <div class="card-body text-center">
+                    <h5 class="card-title fw-bold plant-title">Aparajita (Blue Pea)</h5>
+                    <p class="card-text plant-text">A holy and fast-growing climber that yields stunning conch-shaped blue flowers, famous for making healthy blue herbal tea.</p>
+                    <span class="fw-bold d-block mb-3 plant-price"><i class="fa-solid fa-indian-rupee-sign"></i> 99</span>
+                    <div class="d-flex gap-2 justify-content-center align-items-center">
+                        <button class="btn btn-success rounded-pill add-to-cart-btn flex-grow-1">Add to Cart</button>
+                        <button class="btn btn-outline-danger wishlist-btn" data-name="Aparajita (Blue Pea)" data-price="99" data-img="https://m.media-amazon.com/images/I/41y-Z5gQuvL.jpg">
+                            <i class="fa-regular fa-heart"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+
+    <!-- 🛑 FOOTER -->
+    <footer class="bg-dark text-white text-center py-4 mt-5">
+        <p class="mb-0">&copy; 2026 Plant Oasis. All Rights Reserved. Developed by Own.</p>
+    </footer>
+
+    <!-- Bootstrap JS Bundle -->
+    <script>
+    let cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+    const cartBadge = document.getElementById('cart-count');
+    if (cartBadge) {
+        cartBadge.innerText = cart.reduce((total, item) => total + item.quantity, 0);
+    }
+
+    const allButtons = document.querySelectorAll('.add-to-cart-btn');
+
+    allButtons.forEach(function(button) {
+        button.addEventListener('click', function(event) {
+            const card = event.target.closest('.custom-plant-card');
+            if (!card) return;
+
+            const title = card.querySelector('.card-title').innerText;
+            const priceText = card.querySelector('.plant-price').innerText;
+            const price = parseInt(priceText.replace(/[^\d]/g, '')); 
+            const img = card.querySelector('.plant-img').src;
+
+            const plant = {
+                title: title,
+                price: price,
+                img: img,
+                quantity: 1
+            };
+
+            const existingProductIndex = cart.findIndex(item => item.title === plant.title);
+            
+            if (existingProductIndex > -1) {
+                cart[existingProductIndex].quantity += 1;
+            } else {
+                cart.push(plant);
+            }
+
+            localStorage.setItem('cart', JSON.stringify(cart));
+
+            if (cartBadge) {
+                cartBadge.innerText = cart.reduce((total, item) => total + item.quantity, 0);
+            }
+
+            alert(title + " added successfully! 🎉");
+        });
+    });
+
+    // 1. Wishlist Badge ko update karne wala main function
+    function updateWishlistBadge() {
+        const wishlistBadge = document.getElementById('wishlist-badge');
+        const wishlist = JSON.parse(localStorage.getItem('plantWishlist')) || [];
+        
+        if (wishlistBadge) {
+            wishlistBadge.textContent = wishlist.length;
+            // Agar list khali hai toh badge hide kar do, warna dikhao
+            wishlistBadge.classList.toggle('d-none', wishlist.length === 0);
+        }
+    }
+
+    // 2. Wishlist UI (Heart icon active/inactive) ko set karne wala function
+    function updateWishlistUI() {
+        const wishlist = JSON.parse(localStorage.getItem('plantWishlist')) || [];
+        document.querySelectorAll('.wishlist-btn').forEach(btn => {
+            const plantName = btn.getAttribute('data-name');
+            const isWishlisted = wishlist.some(item => item.name === plantName);
+            
+            if (isWishlisted) {
+                btn.classList.add('active');
+                btn.innerHTML = '<i class="fa-solid fa-heart"></i>';
+            } else {
+                btn.classList.remove('active');
+                btn.innerHTML = '<i class="fa-regular fa-heart"></i>';
+            }
+        });
+    }
+
+    // 3. Page load hote hi sab set karo
+    document.addEventListener('DOMContentLoaded', function () {
+        updateWishlistBadge();
+        updateWishlistUI();
+
+        // 4. Sabhi Wishlist buttons par click event lagao
+        document.querySelectorAll('.wishlist-btn').forEach(btn => {
+            btn.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                // Sabse pehle tazza (latest) data uthao
+                let wishlist = JSON.parse(localStorage.getItem('plantWishlist')) || [];
+                const name = this.getAttribute('data-name');
+                const price = this.getAttribute('data-price');
+                const img = this.getAttribute('data-img');
+
+                const index = wishlist.findIndex(item => item.name === name);
+
+                if (index === -1) {
+                    // Add to wishlist
+                    wishlist.push({ name, price, img });
+                } else {
+                    // Remove from wishlist
+                    wishlist.splice(index, 1);
+                }
+
+                // Storage mein save karo
+                localStorage.setItem('plantWishlist', JSON.stringify(wishlist));
+
+                // UI aur Badge dono ko update karo
+                updateWishlistUI();
+                updateWishlistBadge();
+            });
+        });
+    });
+</script>
+</body>
+</html>
